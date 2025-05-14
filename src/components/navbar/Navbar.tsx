@@ -11,6 +11,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"
 import { herettoLogo, hamburgerMenu } from "../../../public/images/index";
 import { GradientButton } from "../shared/CustomButtons/Buttons";
 import { useState } from "react";
@@ -202,6 +208,27 @@ const navItems = [
   }
 ];
 
+function AccordionNavItem(item: any) {
+  return (
+    <Accordion type="single" collapsible className="w-full text=[#F5F5F5]">
+      <AccordionItem value="item-1">
+        <AccordionTrigger>
+          {item.item.title}
+        </AccordionTrigger>
+        <AccordionContent>
+          {item.item.items?.map((item: any, idx: number) => (
+            <div key={idx}>
+              <h3 className="text-[15px] leading-[24px] py-5 pl-3">
+                {item.title}
+              </h3>
+            </div>
+          ))}
+        </AccordionContent>
+      </AccordionItem>
+    </Accordion>
+  )
+}
+
 function navItem(item: any) {
   if(item.type === "dropdown") {
     return (
@@ -253,16 +280,14 @@ function navItem(item: any) {
 
 function MobileMenu() {
   return (
-    <div className="fixed top-[90px] left-0 right-0 w-full h-full bg-[#070010] text-[#F5F5F5]">
+    <div className="xl:hidden fixed overflow-y-auto top-[90px] left-0 right-0 w-full h-full bg-[#070010] text-[#F5F5F5] pb-4">
       {
         navItems.map((item, index) => (
-          <div className="border-y-1 border-[#332C44]">
+          <div key={index} className="border-y-1 border-[#332C44]">
             <div className="text-[15px] leading-[24px] py-5 global-padding">
               {item.type === "text" ? <Link href={"/"+item.link}>
                 {item.title}
-              </Link> : <div>
-                {item.title}
-              </div>}
+              </Link> : <AccordionNavItem item={item} />}
             </div>
           </div>
         ))
@@ -275,8 +300,8 @@ function MobileMenu() {
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[#070010] ">
-      <div className="main-container-width flex h-[90px] items-center justify-between py-y global-padding">
+    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[#070010] global-padding">
+      <div className="main-container-width flex h-[90px] items-center justify-between py-y ">
         {/* Logo */}
         <Link href="/" className=" ">
           <Image className="md:w-[136px] md:h-[45px] w-[100px] h-[30px] "
