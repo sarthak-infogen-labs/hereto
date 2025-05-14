@@ -22,6 +22,20 @@ const navLinks = [
   "Career",
 ];
 
+const some = [
+  {
+    id: "ai-frontier",
+    type: "text",
+    title: "AI frontied",
+  },
+  {
+    id: "ai-frontier",
+    type: "dropdown",
+    title: "AI frontied",
+    items: [],
+  },
+];
+
 const solutionsSections = [
   {
     title: "Next-Gen Transformation",
@@ -59,7 +73,7 @@ const solutionsSections = [
 export function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[#070010]">
-      <div className="max-w-[1440px] mx-auto flex h-20 items-center justify-between py-y px-20">
+      <div className="main-container-width flex h-20 items-center justify-between py-y px-20">
         {/* Logo */}
         <Link href="/" className="flex items-center  min-w-30">
           <Image

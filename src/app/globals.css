@@ -1,16 +1,12 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@media (prefers-color-scheme: dark) {
-  /* :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  } */
+:root {
+  --background: #070010;
 }
 
 body {
-  /* color: var(--foreground); */
-  background-color: #070010;
+  background-color: var(--background);
 }
 
 @layer components {
@@ -22,6 +18,10 @@ body {
 @layer utilities {
   .border-test {
     @apply border-1 border-green-400;
+  }
+
+  .main-container-width {
+    @apply w-full max-w-[1200px] mx-auto;
   }
 
   @keyframes wave {
