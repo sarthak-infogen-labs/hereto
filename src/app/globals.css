@@ -82,7 +82,11 @@ body {
   }
 
   .main-container-width {
-    @apply w-full max-w-[1200px] mx-auto;
+    @apply w-full max-w-[1300px] mx-auto;
+  }
+
+  .global-padding {
+    @apply px-[20px] md:px-[40px] lg:px-[60px];
   }
 
   @keyframes wave {
