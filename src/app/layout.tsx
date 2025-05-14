@@ -22,10 +22,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(dmSans.className, "antialiased")}>
-        <div className="main-container-width">
-          <Navbar />
+        <div className=" min-h-[2100px] overflow-hidden">
+          <div className="main-container-width ">
+            <Navbar />
+          </div>
+          <div className="main-container-width mt-[90px] border-t-1 ">
+            {children}
+          </div>
         </div>
-        <div className="main-container-width mt-[200px]">{children}</div>
       </body>
     </html>
   );

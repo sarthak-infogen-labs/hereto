@@ -12,7 +12,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
 import { herettoLogo, hamburgerMenu } from "../../../public/images/index";
-import { GradientButton } from "../shared/Buttons";
+import { GradientButton } from "../shared/CustomButtons/Buttons";
 import { useState } from "react";
 import { X } from "lucide-react";
 
@@ -275,8 +275,8 @@ function MobileMenu() {
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[#070010] global-padding">
-      <div className="main-container-width flex h-[90px] items-center justify-between py-y ">
+    <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[#070010] ">
+      <div className="main-container-width flex h-[90px] items-center justify-between py-y global-padding">
         {/* Logo */}
         <Link href="/" className=" ">
           <Image className="md:w-[136px] md:h-[45px] w-[100px] h-[30px] "
