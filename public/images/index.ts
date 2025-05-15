@@ -6,6 +6,9 @@ import xLogo from "./xLogo.svg";
 import gmailLogo from "./gmailLogo.svg";
 import map from "./location_map.svg"
 import blogImage1 from "./blogImage1.png"
+import graceImg from "./Grace.jpg"
+import boForgeImg from "./BOForge.jpg"
+import thitoImg from "./Thito.jpg"
 
 import kickoff from "./about-us/kickoff.svg";
 import kickoffbase from "./about-us/kickoff_base.svg";
@@ -40,6 +43,9 @@ export {
     buildbase,
     deliver,
     deliverbase,
+    graceImg,
+    boForgeImg,
+    thitoImg,
     learningIcon,
     fintechIcon,
     gamingIcon,
