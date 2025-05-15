@@ -37,6 +37,7 @@ const navItems = [
       {
         id: "artificial-intelligence",
         title: "Artificial Intelligence & ML",
+        link: "artificial-intelligence",
         links: [
           {
             id: "generative-ai",
@@ -78,6 +79,7 @@ const navItems = [
       {
         id: "data-driven-transformation",
         title: "Data-Driven Transformation",
+        link: "data-driven-transformation",
         links: [
           {
             id: "data-engineering",
@@ -104,6 +106,7 @@ const navItems = [
       {
         id: "product-engineering",
         title: "Product Engineering",
+        link: "product-engineering",
         links: [
           {
             id: "app-development",
@@ -145,6 +148,7 @@ const navItems = [
       {
         id: "next-gen-transformation",
         title: "Next-Gen Transformation",
+        link: "next-gen-transformation",
         links: [
           {
             id: "extended-reality",
