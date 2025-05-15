@@ -6,6 +6,7 @@ import SolutionsSection from "@/components/pages/home/SolutionsSection";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
 import ScalableSolutionsSection from "@/components/pages/home/ScalableSolutionsSection";
+import InnovationLabsSection from "@/components/pages/home/InnovationLabsSection";
 
 export default function Home() {
   return (
@@ -30,6 +31,10 @@ export default function Home() {
 
         <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
           <ScalableSolutionsSection />
+        </div>
+
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+          <InnovationLabsSection />
         </div>
         <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
           <TInsights />
