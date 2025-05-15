@@ -8,6 +8,7 @@
 @theme {
   --color-primary: #070010;
   --color-secondary: #00c4cc;
+  --color-white: #eee6fc;
 }
 
 @layer utilities {
@@ -36,7 +37,7 @@
   }
 
   .text-h6 {
-    @apply font-medium text-[1rem] md:text-[1.125rem] lg:text-[1.25rem];
+    @apply font-[400] text-[1rem] md:text-[1.125rem] lg:text-[1.25rem];
   }
 
   /* Paragraph Sizes */
@@ -54,7 +55,7 @@
 
   /* Subtitles */
   .text-subtitle {
-    @apply font-medium text-[1rem] md:text-[1.125rem] lg:text-[1.25rem] ;
+    @apply font-normal text-[1rem] md:text-[1.125rem] lg:text-[1.25rem];
   }
 
   /* Captions & Helper Text */
@@ -64,6 +65,10 @@
 
   .text-label {
     @apply text-[0.875rem] font-medium tracking-wide ;
+  }
+
+  .text-title-mobile{
+    @apply text-[1.5rem] font-semibold
   }
 }
 
@@ -90,6 +95,14 @@ body {
     @apply px-[20px] md:px-[40px] lg:px-[60px];
   }
 
+  .bg-blur-gradient-border {
+    @apply backdrop-blur-2xl border rounded-3xl border-[#322B43];
+    background: linear-gradient(
+      to bottom,
+      rgba(7, 0, 16, 0.14) 0%,
+      #070010 100%
+    );
+  }
 
   @keyframes wave {
     0% {

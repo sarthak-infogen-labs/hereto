@@ -3,7 +3,7 @@ import React from "react";
 const SolutionsSection = () => {
   return (
     <div className="min-h-screen border-test">
-      <div className="px-32.5 py-15 mt-32.5">
+      <div className="">
         <div className="flex flex-col items-center max-w-[1440px] mx-auto">
           <div className="">
             <p className="text-[#EEE6FC] text-5xl leading-[60px] font-semibold max-w-[930px] text-center">
