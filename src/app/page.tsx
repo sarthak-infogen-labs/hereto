@@ -3,8 +3,9 @@ import DropdownSelectionCard from "@/components/cards/DropdownSelectionCard";
 import AIFrontierSection from "@/components/pages/home/AIFrontierSection";
 import Hero from "@/components/pages/home/Hero";
 import SolutionsSection from "@/components/pages/home/SolutionsSection";
-
+import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
+
 export default function Home() {
   return (
     <div className="relative">
@@ -25,6 +26,10 @@ export default function Home() {
         <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
           <SolutionsSection />
         </div>
+      </div>
+      
+      <div className="main-container-width global-padding">
+        <TInsights />
       </div>
 
       <div className="main-container-width global-padding">

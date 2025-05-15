@@ -5,7 +5,7 @@ import facebookLogo from "./facebookLogo.svg";
 import xLogo from "./xLogo.svg";
 import gmailLogo from "./gmailLogo.svg";
 import map from "./location_map.svg"
-
+import blogImage1 from "./blogImage1.png"
 
 export { 
     herettoLogo,
@@ -14,5 +14,6 @@ export {
     facebookLogo,
     xLogo,
     gmailLogo,
-    map
+    map,
+    blogImage1
 };
