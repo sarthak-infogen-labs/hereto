@@ -25,6 +25,7 @@ import industryIcon from "./about-us/industry.svg";
 import logisticsIcon from "./about-us/logistics.svg";
 import healthIcon from "./about-us/health.svg";
 import highTech from "./about-us/high-tech.svg";
+import grid from "./grid.svg";
 
 export { 
     herettoLogo,
@@ -46,6 +47,7 @@ export {
     graceImg,
     boForgeImg,
     thitoImg,
+    grid,
     learningIcon,
     fintechIcon,
     gamingIcon,

@@ -10,6 +10,7 @@ import { ContactSection } from "@/components/forms/contact-form/ContactSection";
 
 const sectionSpacing = "mt-[92px] lg:mt-[130px] xl:mt-[190px]";
 import InnovationLabsSection from "@/components/pages/home/InnovationLabsSection";
+import AboutUsSection from "@/components/pages/home/AboutUsSection";
 
 export default function Home() {
   return (
@@ -37,6 +38,10 @@ export default function Home() {
 
         <div className={sectionSpacing}>
           <ScalableSolutionsSection />
+        </div>
+
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+          <AboutUsSection />
         </div>
 
         <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
