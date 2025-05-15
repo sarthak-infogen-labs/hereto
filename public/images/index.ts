@@ -7,6 +7,15 @@ import gmailLogo from "./gmailLogo.svg";
 import map from "./location_map.svg"
 import blogImage1 from "./blogImage1.png"
 
+import kickoff from "./about-us/kickoff.svg";
+import kickoffbase from "./about-us/kickoff_base.svg";
+import create from "./about-us/create-top.svg";
+import createbase from "./about-us/create-bottom.svg";
+import build from "./about-us/build-top.svg";
+import buildbase from "./about-us/build-bottom.svg";
+import deliver from "./about-us/deliver-top.svg";
+import deliverbase from "./about-us/deliver-bottom.svg";
+
 export { 
     herettoLogo,
     hamburgerMenu,
@@ -15,5 +24,13 @@ export {
     xLogo,
     gmailLogo,
     map,
-    blogImage1
+    blogImage1,
+    kickoff,
+    kickoffbase,
+    create,
+    createbase,
+    build,
+    buildbase,
+    deliver,
+    deliverbase
 };

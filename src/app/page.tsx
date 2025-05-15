@@ -5,6 +5,7 @@ import Hero from "@/components/pages/home/Hero";
 import SolutionsSection from "@/components/pages/home/SolutionsSection";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
+import ScalableSolutionsSection from "@/components/pages/home/ScalableSolutionsSection";
 
 export default function Home() {
   return (
@@ -23,17 +24,19 @@ export default function Home() {
             <AIFrontierSection />
           </div>
         </div>
-        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px] ">
           <SolutionsSection />
         </div>
-      </div>
-      
-      <div className="main-container-width global-padding">
-        <TInsights />
-      </div>
 
-      <div className="main-container-width global-padding">
-        <ContactSection />
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+          <ScalableSolutionsSection />
+        </div>
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+          <TInsights />
+        </div>
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+          <ContactSection />
+        </div>
       </div>
     </div>
   );

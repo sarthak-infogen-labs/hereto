@@ -20,7 +20,7 @@ const SolutionsSection = () => {
   const [selected, setSelected] = useState("vue");
 
   return (
-    <div className="min-h-screen">
+    <div >
       <div className="">
         <div className="flex flex-col items-center mx-auto">
           <MainHeader
