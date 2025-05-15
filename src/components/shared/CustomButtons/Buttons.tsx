@@ -68,7 +68,7 @@ export const CustomButton = forwardRef<HTMLButtonElement, CustomButtonProps>(
       <button
         ref={ref}
         className={cn(
-          "h-10 inline-flex items-center gap-2 pl-5 pr-2.5 bg-[#19082E] border border-[#F5F5F5] rounded-md text-[#F5F5F5] text-[16px] leading-[24px] font-normal cursor-pointer",
+          "h-10 inline-flex items-center justify-center gap-2 pl-5 pr-2.5 bg-[#19082E] border border-[#F5F5F5] rounded-md text-[#F5F5F5] text-[16px] leading-[24px] font-normal cursor-pointer",
           className
         )}
         {...props}
