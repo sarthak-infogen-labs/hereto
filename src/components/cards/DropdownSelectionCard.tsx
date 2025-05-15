@@ -7,7 +7,7 @@ import CustomDropdown from "../shared/CustomDropdown/CustomDropdown";
 const options = [
   { id: "1", label: "React", value: "react" },
   { id: "2", label: "Vue", value: "vue" },
-  { id: "3", label: "Agentic AI", value: "angular" },
+  { id: "3", label: "Next-Gen Transformation", value: "angular" },
 ];
 
 const DropdownSelectionCard = () => {

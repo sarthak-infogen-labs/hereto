@@ -64,11 +64,11 @@
   }
 
   .text-label {
-    @apply text-[0.875rem] font-medium tracking-wide ;
+    @apply text-[0.875rem] font-medium tracking-wide;
   }
 
-  .text-title-mobile{
-    @apply text-[1.5rem] font-semibold
+  .text-title-mobile {
+    @apply text-[1.5rem] font-semibold;
   }
 }
 
@@ -93,6 +93,16 @@ body {
 
   .global-padding {
     @apply px-[20px] md:px-[40px] lg:px-[60px];
+  }
+
+  .solution-card-body-gradient {
+    @apply border border-solid border-[1px];
+    border-image-source: linear-gradient(
+      47.42deg,
+      rgba(49, 40, 69, 0.2) 26.06%,
+      rgba(71, 63, 90, 0.6) 101.39%
+    );
+    border-image-slice: 1;
   }
 
   .bg-blur-gradient-border {
@@ -158,5 +168,13 @@ body {
       width: auto;
       height: 300px;
     }
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }

@@ -11,8 +11,8 @@ export default function Home() {
         {/* <WaveAnimation /> */}
       </div>
       <div className="main-container-width global-padding">
-        {/* <Hero /> */}
-        {/* <div className="mt-[92px] lg:mt-[160px] xl:mt-[260px]">
+        <Hero />
+        <div className="mt-[92px] lg:mt-[160px] xl:mt-[260px]">
           <div className="block lg:hidden">
             <DropdownSelectionCard />
           </div>
@@ -20,8 +20,10 @@ export default function Home() {
           <div className="hidden lg:block">
             <AIFrontierSection />
           </div>
-        </div> */}
-        <SolutionsSection />
+        </div>
+        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+          <SolutionsSection />
+        </div>
       </div>
     </div>
   );
