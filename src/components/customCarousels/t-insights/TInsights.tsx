@@ -140,9 +140,9 @@ function TInsights() {
       : blogData.filter((blog) => blog.type === activeFilter);
 
   return (
-    <section className="mt-[130px] flex flex-col items-center pt-15 pb-22.5">
+    <section className="flex flex-col items-center pb-22.5">
       <div className=" w-full ">
-        <div className="flex flex-row items-center justify-between mt-15 px-2 ">
+        <div className="flex flex-row items-center justify-between  px-2 ">
           <FilterTabs
             activeFilter={activeFilter}
             onFilterChange={handleFilterChange}

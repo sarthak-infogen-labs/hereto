@@ -1,41 +1,53 @@
-import WaveAnimation from "@/components/animatedAssets/WaveAnimation";
-import DropdownSelectionCard from "@/components/cards/DropdownSelectionCard";
-import AIFrontierSection from "@/components/pages/home/AIFrontierSection";
 import Hero from "@/components/pages/home/Hero";
+import AIFrontierSection from "@/components/pages/home/AIFrontierSection";
 import SolutionsSection from "@/components/pages/home/SolutionsSection";
+import ScalableSolutionsSection from "@/components/pages/home/ScalableSolutionsSection";
+import InnovateIndustries from "@/components/pages/home/InnovateIndustries";
+import DropdownSelectionCard from "@/components/cards/DropdownSelectionCard";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
-import ScalableSolutionsSection from "@/components/pages/home/ScalableSolutionsSection";
+// import WaveAnimation from "@/components/animatedAssets/WaveAnimation";
+
+const sectionSpacing = "mt-[92px] lg:mt-[130px] xl:mt-[190px]";
 
 export default function Home() {
   return (
     <div className="relative">
-      <div className="hidden lg:block absolute top-[-100px] left-[-700px]">
-        {/* <WaveAnimation /> */}
-      </div>
+      {/* Background decoration (optional) */}
+      {/* <div className="hidden lg:block absolute top-[-100px] left-[-700px]">
+        <WaveAnimation />
+      </div> */}
+
       <div className="main-container-width global-padding">
         <Hero />
+
         <div className="mt-[92px] lg:mt-[160px] xl:mt-[260px]">
           <div className="block lg:hidden">
             <DropdownSelectionCard />
           </div>
-
           <div className="hidden lg:block">
             <AIFrontierSection />
           </div>
         </div>
-        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px] ">
+
+        <div className={sectionSpacing}>
           <SolutionsSection />
         </div>
 
-        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+        <div className={sectionSpacing}>
           <ScalableSolutionsSection />
         </div>
-        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+
+        <div className={sectionSpacing}>
           <TInsights />
         </div>
-        <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
+
+        <div className={sectionSpacing}>
           <ContactSection />
+        </div>
+
+        <div className={sectionSpacing}>
+          <InnovateIndustries />
         </div>
       </div>
     </div>

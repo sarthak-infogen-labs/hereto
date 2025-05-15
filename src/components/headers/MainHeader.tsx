@@ -10,7 +10,7 @@ const MainHeader = ({
   title1: string;
   title2: string;
   summary: string;
-  hideSmallerDeviceSummary: boolean;
+  hideSmallerDeviceSummary?: boolean;
 }) => {
   return (
     <div className="flex flex-col items-center mx-auto">

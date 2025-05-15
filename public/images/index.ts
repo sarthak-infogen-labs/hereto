@@ -15,6 +15,13 @@ import build from "./about-us/build-top.svg";
 import buildbase from "./about-us/build-bottom.svg";
 import deliver from "./about-us/deliver-top.svg";
 import deliverbase from "./about-us/deliver-bottom.svg";
+import learningIcon from "./about-us/learning.svg";
+import fintechIcon from "./about-us/fintech.svg";
+import gamingIcon from "./about-us/gaming.svg";
+import industryIcon from "./about-us/industry.svg";
+import logisticsIcon from "./about-us/logistics.svg";
+import healthIcon from "./about-us/health.svg";
+import highTech from "./about-us/high-tech.svg";
 
 export { 
     herettoLogo,
@@ -32,5 +39,12 @@ export {
     build,
     buildbase,
     deliver,
-    deliverbase
+    deliverbase,
+    learningIcon,
+    fintechIcon,
+    gamingIcon,
+    industryIcon,
+    logisticsIcon,
+    healthIcon,
+    highTech
 };

@@ -21,8 +21,8 @@ const BlogCard= ({
   excerpt,
 }: BlogCardProps) => {
   return (
-    <article className="bg-[#3D2D59]/12 backdrop-blur-sm w-[338px] h-auto pb-[30px] rounded-[20px] transition-all duration-300 hover:scale-[1.02] cursor-pointer border-[#C1C1C1]/33 border-[0.5px]">
-      <div className="relative flex w-full flex-col overflow-hidden ">
+    <article className="bg-[#3D2D59]/12 backdrop-blur-sm w-[338px]  overflow-hidden h-auto pb-[30px] rounded-[20px] transition-all duration-300 hover:scale-[1.02] cursor-pointer border-[#C1C1C1]/33 border-[0.5px]">
+      <div className="relative flex w-full flex-col overflow-hidden">
         <Image
           src={image}
           className="aspect-[1.85] object-cover w-full"
