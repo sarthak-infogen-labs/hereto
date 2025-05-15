@@ -4,6 +4,7 @@ import linkedinLogo from "./linkedinLogo.svg";
 import facebookLogo from "./facebookLogo.svg";
 import xLogo from "./xLogo.svg";
 import gmailLogo from "./gmailLogo.svg";
+import map from "./location_map.svg"
 
 
 export { 
@@ -12,5 +13,6 @@ export {
     linkedinLogo,
     facebookLogo,
     xLogo,
-    gmailLogo
+    gmailLogo,
+    map
 };
