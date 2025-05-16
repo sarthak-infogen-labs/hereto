@@ -31,7 +31,7 @@ const MainHeader = ({
         summary &&  
         <div
           className={cn(
-            "mt-[36px] border-test",
+            "mt-[36px] ",
             hideSmallerDeviceSummary && "hidden md:block"
           )}
         >

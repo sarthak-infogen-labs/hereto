@@ -171,8 +171,8 @@ function TInsights() {
         >
           <CarouselContent>
               {filteredBlogs.map((blog) => (
-                <CarouselItem key={blog.id} className="sm:basis-[60%] lg:basis-[40%] xl:basis-[30%]">
-                  <div className="pl-0">
+                <CarouselItem key={blog.id} className=" sm:basis-[60%] lg:basis-[40%] xl:basis-[30%]">
+                  <div className="">
                     <BlogCard
                       key={blog.id}
                       image={blog.image}
