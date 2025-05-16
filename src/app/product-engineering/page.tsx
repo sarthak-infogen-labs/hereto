@@ -1,3 +1,4 @@
+import ServiceSectionComponent from "@/components/pages/solutions/ServiceSectionComponent";
 import ConsultSection from "./sections/ConsultSection";
 import ProductEngineeringHeroSection from "./sections/ProductEngineeringHeroSection";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
@@ -6,6 +7,10 @@ export default function Page() {
         <div className="main-container-width global-padding">
             <ProductEngineeringHeroSection />
 
+            <div className="mt-[92px] lg:mt-[135px] xl:mt-[170px]">
+                <ServiceSectionComponent />
+            </div>
+            
             <div className="mt-[92px] lg:mt-[135px] xl:mt-[170px]">
                 <TInsights />
             </div>
