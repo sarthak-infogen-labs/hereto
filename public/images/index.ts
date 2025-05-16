@@ -34,6 +34,8 @@ import shivajiUniversity from "./testimonials/shivaji-university.svg"
 import mitsubishi from "./testimonials/mitsubishi.svg"
 import medisimLab from "./testimonials/medisim-lab.svg"
 
+import dataDrivenHeroSection from "./data-driven-hero.png"
+
 export { 
     herettoLogo,
     hamburgerMenu,
@@ -67,5 +69,6 @@ export {
     wagoneer,
     shivajiUniversity,
     mitsubishi,
-    medisimLab
+    medisimLab,
+    dataDrivenHeroSection
 };
