@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function BGGridGradientComponent() {
     return (
         <div>
-            <div className="absolute inset-0 z-[-10] border-test">
+            <div className="absolute inset-0 z-[-10] ">
                 <div className="relative w-full h-full">
                     <Image src={grid} alt="grid" className="w-full h-full object-cover" />
                     <div 
@@ -17,9 +17,9 @@ export default function BGGridGradientComponent() {
                 </div>
             </div>
 
-            <div className="absolute inset-0 flex items-center justify-center z-[-1] blur-2xl border-test">
+            <div className="absolute inset-0 flex items-center justify-center z-[-1] blur-2xl ">
                 <div
-                    className="w-[1300px] h-[162px] border-test [clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] opacity-20"
+                    className="w-[1300px] h-[162px]  [clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] opacity-20"
                     style={{
                         background: 'radial-gradient(circle, #7D2AE8E5, #5A32FA4D, #1A1D3E66)'
                     }}
