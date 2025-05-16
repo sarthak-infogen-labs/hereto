@@ -3,7 +3,7 @@ import AIFrontierHero from "./sections/AIFrontierHero";
 import EnterpriseAutomationComponent from "./sections/EnterpriseAutomationComponent";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import TechnologiesSection from "./sections/TechnologiesSection";
-
+import ConsultSection from "./sections/ConsultSection";
 const page = () => {
   return (
     <div className="main-container-width global-padding">
@@ -14,6 +14,9 @@ const page = () => {
       </div>
       <div className="mt-[92px] lg:mt-[140px] xl:mt-[264px]">
         <TInsights />
+      </div>
+      <div className="md:mt-[92px] mt-10"> 
+        <ConsultSection />
       </div>
     </div>
   );
