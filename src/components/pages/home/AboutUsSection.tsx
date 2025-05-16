@@ -3,10 +3,20 @@ import Image from "next/image";
 import { grid } from "../../../../public/images/index";
 export default function AboutUsSection() {
     return (
-        <section className="md:h-[456px] relative border-test">
-            <div className="absolute top-0 left-0 w-full h-full z-[-1]">
-                <Image src={grid} alt="grid" />
+        <section className="md:h-[456px] relative">
+            <div className="absolute inset-0 z-[-10]">
+                <Image src={grid} alt="grid" className="w-full h-full object-cover" />
             </div>
+
+            <div className="absolute inset-0 flex items-center justify-center z-[-1] blur-2xl">
+                <div
+                    className="w-[900px] h-[262px] [clip-path:polygon(50%_0%,_0%_100%,_100%_100%)] blur-4xl opacity-50"
+                    style={{
+                        background: 'radial-gradient(circle, #7D2AE8E5, #5A32FA4D, #1A1D3E66)'
+                    }}
+                ></div>
+            </div>
+
             <div className="pt-[80px] px-30 pb-[118px]">
                 <p className="text-[#D6C8EE] text-h4 text-center leading-[32px] tracking-[0.36px] max-w-[1068px] mx-auto">
                 We are a group of tech enthusiasts passionate about early adoption of 

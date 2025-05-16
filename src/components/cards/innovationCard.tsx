@@ -33,7 +33,7 @@ export default function Card({
             <div className="border-l-2 border-[#00C4CC] px-[18px] h-5 flex items-center">
                 <p className="text-[#F5F5F5] text-[18px] leading-[28px] font-semibold max-w-[200px]">{title}</p>
             </div>
-            <div className="px-[18px]  border-test">
+            <div className="px-[18px]">
                 <p className="text-[#B2A8BE] text-[16px] leading-[24px] font-normal h-19.5 line-clamp-3">
                 {"asdasdasdasdasdasdadasdasdasdasdasdas"+description}
                 </p>
