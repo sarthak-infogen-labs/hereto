@@ -1,4 +1,4 @@
-import Hero from "./CustomHeroWIthImage";
+import Hero from "../../../components/shared/CustomHero/CustomHeroWIthImage";
 
 interface DataDrivenHeroSectionProps {
     title: string;
