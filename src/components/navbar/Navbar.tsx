@@ -202,7 +202,7 @@ const navItems = [
     id: "about",
     type: "text",
     title: "About",
-    link: "about"
+    link: "about-us"
   },
   {
     id: "career",

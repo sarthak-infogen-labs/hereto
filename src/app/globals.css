@@ -13,11 +13,11 @@
 
 @layer utilities {
   .text-display {
-    @apply font-bold leading-tight text-[2rem] md:text-[3.5rem] lg:text-[4.75rem];
+    @apply font-semibold leading-tight text-[2rem] md:text-[3.5rem] lg:text-[4.75rem];
   }
 
   .text-h1 {
-    @apply font-bold leading-snug text-[2rem] md:text-[2.5rem] lg:text-[3rem];
+    @apply font-semibold leading-snug text-[2rem] md:text-[2.5rem] lg:text-[3rem];
   }
 
   .text-h1-semibold {
@@ -207,4 +207,10 @@ body {
 .animate-scroll {
   animation: scroll 20s linear infinite;
   will-change: transform;
+}
+
+.gradient-text {
+  background: linear-gradient(91.64deg, #00C4CC 56.73%, #7D2AE8 110.49%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

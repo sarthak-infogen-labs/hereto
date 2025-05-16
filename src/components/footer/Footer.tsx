@@ -9,7 +9,7 @@ export const Footer: React.FC = () => {
     { text: "Portfolio", href: "/portfolio" },
     { text: "Innovation Labs", href: "/innovation-labs" },
     { text: "T-insights", href: "/t-insights" },
-    { text: "About", href: "/about" },
+    { text: "About", href: "/about-us" },
     { text: "Collaboration", href: "/collaboration" },
   ];
 
