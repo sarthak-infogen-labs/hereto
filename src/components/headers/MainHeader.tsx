@@ -8,7 +8,7 @@ const MainHeader = ({
   hideSmallerDeviceSummary = false,
 }: {
   title1: string;
-  title2: string;
+  title2?: string;
   summary: string;
   hideSmallerDeviceSummary?: boolean;
 }) => {
@@ -17,8 +17,13 @@ const MainHeader = ({
       <div className="">
         <p className="text-[#EEE6FC] text-h1 font-semibold max-w-[930px] text-center">
           {title1}
-          <br />
-          {title2}
+          {title2 && (
+            <>
+              {" "}
+              <br />
+              {title2}
+            </>
+          )}
         </p>
       </div>
 
