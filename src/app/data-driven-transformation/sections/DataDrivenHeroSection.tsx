@@ -1,19 +1,5 @@
 import Hero from "../../../components/shared/CustomHero/CustomHeroWIthImage";
 
-interface DataDrivenHeroSectionProps {
-    title: string;
-    gradientTitle: string;
-    description: string;
-    buttonText: string;
-    image: {
-        path: string;
-        alt: string;
-        width: number;
-        height: number;
-    };
-    link: string;
-}
-
 const dataDrivenHeroImage = {
     path: "/images/data-driven-hero.png",
     alt: "Data Driven Hero Section",
