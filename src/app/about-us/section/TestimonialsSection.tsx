@@ -67,7 +67,7 @@ function TabButton({
     return (
         <div>
             <button className={`px-5 py-3 flex rounded-xl border-[0.4px] border-[#332C44] bg-[#484364]/8 backdrop-blur-lg items-center gap-4 ${!isActive ? "text-[#B2A8BE]" : "text-[#EEE6FC]"}`} onClick={onClick}>
-                <div className="w-[30px] h-[30px]">
+                <div className={`w-[30px] h-[30px] ${!isActive ? "grayscale opacity-50" : ""}`}>
                     <Image src={logo} alt={id} width={30} height={30}/>
                 </div>
                 <p className="text-[16px] font-medium leading[58px]">{buttonText}</p>
