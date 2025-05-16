@@ -27,6 +27,13 @@ import healthIcon from "./about-us/health.svg";
 import highTech from "./about-us/high-tech.svg";
 import grid from "./grid.svg";
 
+import smeeple from "./testimonials/smeeple_test.svg"
+import thito from "./testimonials/thito.svg"
+import wagoneer from "./testimonials/wagoneer.svg"
+import shivajiUniversity from "./testimonials/shivaji-university.svg"
+import mitsubishi from "./testimonials/mitsubishi.svg"
+import medisimLab from "./testimonials/medisim-lab.svg"
+
 export { 
     herettoLogo,
     hamburgerMenu,
@@ -54,5 +61,11 @@ export {
     industryIcon,
     logisticsIcon,
     healthIcon,
-    highTech
+    highTech,
+    smeeple,
+    thito,
+    wagoneer,
+    shivajiUniversity,
+    mitsubishi,
+    medisimLab
 };

@@ -22,16 +22,20 @@ const MainHeader = ({
         </p>
       </div>
 
-      <div
-        className={cn(
-          "mt-[36px]",
-          hideSmallerDeviceSummary && "hidden md:block"
-        )}
-      >
-        <p className="text-[#D6C8EE] text-[18px] leading-[26px] font-normal max-w-[806px] tracking-[0.036px] text-center">
-          {summary}
-        </p>
-      </div>
+      {
+        summary &&  
+        <div
+          className={cn(
+            "mt-[36px] border-test",
+            hideSmallerDeviceSummary && "hidden md:block"
+          )}
+        >
+
+          <p className="text-[#D6C8EE] text-[18px] leading-[26px] font-normal max-w-[806px] tracking-[0.036px] text-center">
+            {summary}
+          </p>
+        </div>
+      }
     </div>
   );
 };
