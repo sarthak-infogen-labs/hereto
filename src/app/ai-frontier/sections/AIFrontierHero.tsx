@@ -7,21 +7,16 @@ const AIFrontierHero = () => {
     <div className="relative mt-[80px] lg:[140px] xl:mt-[175px]  pb-[120px] lg:pb-[180px]  xl:pb-[234px] ">
       <div className="absolute w-full h-full ">
         <Image
-          src="/images/grid.svg"
+          src="/images/ai-frontier-hero-section/grid-png.png"
           alt="Borderlines"
           fill
-          className="object-cover  mask-radial-fade"
+          className="object-cover mask-radial-fade  opacity-40"
         />
 
         <div
-          className="absolute blur-[100px] top-1/2 w-full h-[300px]  left-1/2 -translate-x-1/2 z-[-1] opacity-60"
+          className="absolute blur-[70px] top-[80%] w-full h-[259px] rounded-full left-1/2 -translate-x-1/2 z-[-1] "
           style={{
-            background: `radial-gradient(
-              circle,
-              rgba(125, 42, 232, 0.5) 0%,
-              rgba(90, 50, 250, 0.2) 50%,
-              rgba(26, 29, 62, 0) 100%
-              )`,
+            background: `radial-gradient(50.98% 52.49% at 50.1% 34.98%, rgba(125, 42, 232, 0.9) 0%, rgba(90, 50, 250, 0.3) 50%, rgba(26, 29, 62, 0.4) 100%);`,
           }}
         />
         <Image
@@ -65,7 +60,7 @@ const AIFrontierHero = () => {
           </div>
 
           <div className="mt-[39px]">
-            <CustomButton className="bg-transparent">
+            <CustomButton className="bg-transparent backdrop-blur-md">
               {"Consult with Data Expert"}
             </CustomButton>
           </div>

@@ -31,9 +31,9 @@ const CompanyInfoCard = ({
 
   return (
     <div>
-      <div className="flex items-center gap-4">
-        <div className="text-h4 text-secondary">{count}+</div>
-        <div className="text-[1rem] font-medium text-white leading-tight">
+      <div className="flex items-center lg:items-start gap-4">
+        <div className="text-lg text-secondary font-bold">{count}+</div>
+        <div className="text-[1rem]  font-medium  text-white leading-tight">
           {/* Small screens: show title normally */}
           <span className="block lg:hidden">{title}</span>
 
