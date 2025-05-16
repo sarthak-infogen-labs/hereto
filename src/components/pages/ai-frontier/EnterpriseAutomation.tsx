@@ -64,7 +64,7 @@ export const EnterpriseAutomation: React.FC = () => {
 
   return (
     <section
-      className="bg-[#070010]/12 border overflow-hidden px-10 py-[24px] lg:py-[55px] xl:py-[80px] rounded-3xl border-[#322B43] max-md:px-5  backdrop-blur-2xl mt-[120px] lg:mt-[180px]  xl:mt-[234px]"
+      className="bg-[#070010]/12 border overflow-hidden px-10 py-[24px] lg:py-[55px] xl:py-[80px] rounded-3xl border-[#322B43] max-md:px-5  backdrop-blur-2xl "
       aria-labelledby="enterprise-automation-title"
     >
       <MainHeader

@@ -1,6 +1,7 @@
 import { CustomButton } from "@/components/shared/CustomButtons/Buttons";
 import { cn } from "@/lib/utils";
 import React from "react";
+import Image from "next/image";
 
 interface FeatureSectionProps {
   title: string;
@@ -28,15 +29,31 @@ export const FeatureSection = ({
   const imageSection = (
     <div
       className={cn(
-        "flex justify-center flex-1 max-md:w-full ",
+        "flex justify-center flex-1 max-md:w-full",
         isReversed ? "md:justify-start" : "md:justify-end"
       )}
     >
-      <img
-        src={imageSrc}
-        className="w-full max-w-[475px] rounded-xl object-contain"
-        alt={title}
-      />
+      <div className="relative w-full max-w-[475px]">
+        <div
+          className="absolute w-[300px] h-[300px]  left-20 bottom-20 blur-[100px] z-[-1] opacity-90 "
+          style={{
+            background: `radial-gradient(
+          circle,
+          rgba(147, 110, 226, 1) 0%,
+          rgba(90, 50, 250, 0.2) 50%,
+          rgba(26, 29, 62, 0) 100%
+        )`,
+          }}
+        />
+
+        <Image
+          src={imageSrc}
+          width={475} 
+          height={291} // Add appropriate height (adjust as needed)
+          className="w-full max-w-[475px] rounded-xl object-contain"
+          alt={title}
+        />
+      </div>
     </div>
   );
 
