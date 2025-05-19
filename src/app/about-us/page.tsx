@@ -23,7 +23,7 @@ const SectionWrapper = ({
 const Page = () => {
   return (
     <div>
-      {/* <AboutUsHeroSection />
+      <AboutUsHeroSection />
 
       <div className="main-container-width global-padding">
         <SectionWrapper spacing="mt-[36px] lg:mt-[48px] xl:mt-[62px]">
@@ -45,9 +45,6 @@ const Page = () => {
         <SectionWrapper spacing="mt-[92px] lg:mt-[110px] xl:mt-[135px]">
           <ContactSection />
         </SectionWrapper>
-      </div> */}
-      <div className="main-container-width global-padding">
-        <ServiceSectionComponent />
       </div>
     </div>
   );
