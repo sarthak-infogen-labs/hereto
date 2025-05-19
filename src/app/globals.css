@@ -32,8 +32,8 @@
     @apply font-semibold text-[1.5rem] md:text-[2rem] lg:text-[2.25rem];
   }
 
-  .text-h4 {
-    @apply font-semibold text-[1.25rem] md:text-[1.5rem] lg:text-[1.75rem];
+  .text-h3-medium {
+    @apply md:text-[1.5rem] lg:text-[1.75rem];
   }
 
   .text-h5 {
@@ -209,8 +209,15 @@ body {
   will-change: transform;
 }
 
-
 .mask-radial-fade {
-  mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0) 80%);
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 80%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 0) 80%
+  );
 }
