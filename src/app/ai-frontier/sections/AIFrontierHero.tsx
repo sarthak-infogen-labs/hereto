@@ -1,7 +1,7 @@
 import { CustomButton } from "@/components/shared/CustomButtons/Buttons";
 import React from "react";
 import Image from "next/image";
-import AnimatedSvg from "./AnimatedSvg";
+import AnimatedSvg from "../../../components/animatedAssets/AnimatedSvg";
 
 const AIFrontierHero = () => {
   return (
@@ -17,7 +17,7 @@ const AIFrontierHero = () => {
         <div
           className="absolute blur-[70px] top-[80%] w-full h-[259px] rounded-full left-1/2 -translate-x-1/2 z-[-1] "
           style={{
-            background: `radial-gradient(50.98% 52.49% at 50.1% 34.98%, rgba(125, 42, 232, 0.9) 0%, rgba(90, 50, 250, 0.3) 50%, rgba(26, 29, 62, 0.4) 100%)`,
+            background: `radial-gradient(50.98% 52.49% at 50.1% 34.98%, rgba(125, 42, 232, 0.9) 0%, rgba(33, 18, 72, 0.2) 50%, rgba(26, 29, 62, 0.4) 100%)`,
           }}
         />
         <div
