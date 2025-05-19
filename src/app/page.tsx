@@ -6,7 +6,7 @@ import InnovateIndustries from "@/components/pages/home/InnovateIndustries";
 import DropdownSelectionCard from "@/components/cards/DropdownSelectionCard";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
-// import WaveAnimation from "@/components/animatedAssets/WaveAnimation";
+import WaveAnimation from "@/components/animatedAssets/WaveAnimation";
 
 const sectionSpacing = "mt-[92px] lg:mt-[130px] xl:mt-[190px]";
 import InnovationLabsSection from "@/components/pages/home/InnovationLabsSection";
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="relative">
       {/* Background decoration (optional) */}
-      {/* <div className="hidden lg:block absolute top-[-100px] left-[-700px]">
+      {/* <div className="hidden lg:block absolute top-[-100px] left-[-700px] overflow-hidden w-full">
         <WaveAnimation />
       </div> */}
 

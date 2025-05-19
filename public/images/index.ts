@@ -36,7 +36,16 @@ import medisimLab from "./testimonials/medisim-lab.svg"
 
 import dataDrivenHeroSection from "./data-driven-hero.png"
 
+import linkedIn from '../images/socials/linkedin.png'
+import twitter from '../images/socials/twitter.png'
+import mail from '../images/socials/mail.png'
+import facebook from '../images/socials/facebook.png'
+
 export { 
+    linkedIn,
+    twitter,
+    mail,
+    facebook,
     herettoLogo,
     hamburgerMenu,
     linkedinLogo,
