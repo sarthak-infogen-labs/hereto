@@ -16,9 +16,9 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion"
+} from "@/components/ui/accordion";
 import { herettoLogo, hamburgerMenu } from "../../../public/images/index";
-import { useState } from "react";
+import { Dispatch, SetStateAction, useState } from "react";
 import { X } from "lucide-react";
 import { GradientButton } from "../shared/CustomButtons/Buttons";
 
@@ -27,7 +27,7 @@ const navItems = [
     id: "ai-frontier",
     type: "text",
     title: "AI Frontier",
-    link: "ai-frontier"
+    link: "ai-frontier",
   },
   {
     id: "solutions",
@@ -37,43 +37,43 @@ const navItems = [
       {
         id: "artificial-intelligence",
         title: "Artificial Intelligence & ML",
-        link: "artificial-intelligence",
+        link: "ai-ml",
         links: [
           {
             id: "generative-ai",
             title: "Generative AI",
-            link: "artificial-intelligence/generative-ai"
+            link: "artificial-intelligence/generative-ai",
           },
           {
             id: "natural-language-processing",
             title: "Natural Language Processing(NLP)",
-            link: "artificial-intelligence/natural-language-processing"
+            link: "artificial-intelligence/natural-language-processing",
           },
           {
             id: "computer-vision",
             title: "Computer Vision(CV)",
-            link: "artificial-intelligence/computer-vision"
+            link: "artificial-intelligence/computer-vision",
           },
           {
             id: "responsible-ai",
             title: "Responsible AI",
-            link: "artificial-intelligence/responsible-ai"
+            link: "artificial-intelligence/responsible-ai",
           },
           {
             id: "deep-learning",
             title: "Deep Learning",
-            link: "artificial-intelligence/deep-learning"
+            link: "artificial-intelligence/deep-learning",
           },
           {
             id: "mlops",
             title: "MLOps",
-            link: "artificial-intelligence/mlops"
+            link: "artificial-intelligence/mlops",
           },
           {
             id: "quantum-computing",
             title: "Quantum Computing",
-            link: "artificial-intelligence/quantum-computing"
-          }
+            link: "artificial-intelligence/quantum-computing",
+          },
         ],
       },
       {
@@ -84,24 +84,24 @@ const navItems = [
           {
             id: "data-engineering",
             title: "Data Engineering",
-            link: "data-driven-transformation/data-engineering"
+            link: "data-driven-transformation/data-engineering",
           },
           {
             id: "data-analytics-bi",
             title: "Data Analytics & BI",
-            link: "data-driven-transformation/data-analytics-bi"
+            link: "data-driven-transformation/data-analytics-bi",
           },
           {
             id: "data-science",
             title: "Data Science",
-            link: "data-driven-transformation/data-science"
+            link: "data-driven-transformation/data-science",
           },
           {
-            id: 'cloud-computing',
+            id: "cloud-computing",
             title: "Cloud Computing",
-            link: "data-driven-transformation/cloud-computing"
-          }
-        ]
+            link: "data-driven-transformation/cloud-computing",
+          },
+        ],
       },
       {
         id: "product-engineering",
@@ -111,39 +111,39 @@ const navItems = [
           {
             id: "app-development",
             title: "App Development",
-            link: "product-engineering/app-development"
+            link: "product-engineering/app-development",
           },
           {
             id: "web-development",
             title: "Web Development",
-            link: "product-engineering/web-development"
+            link: "product-engineering/web-development",
           },
           {
             id: "application-modernization",
             title: "Application Modernization",
-            link: "product-engineering/application-modernization"
+            link: "product-engineering/application-modernization",
           },
           {
             id: "quality-assurance",
             title: "Quality Assurance(QA)",
-            link: "product-engineering/quality-assurance"
+            link: "product-engineering/quality-assurance",
           },
           {
             id: "ui/ux-product-design",
             title: "UI/UX Product Design",
-            link: "product-engineering/ui/ux-product-design"
+            link: "product-engineering/ui/ux-product-design",
           },
           {
             id: "devops",
             title: "DevOps",
-            link: "product-engineering/devops"
+            link: "product-engineering/devops",
           },
           {
             id: "staff-augmentation",
             title: "Staff Augmentation",
-            link: "product-engineering/staff-augmentation"
-          }
-        ]
+            link: "product-engineering/staff-augmentation",
+          },
+        ],
       },
       {
         id: "next-gen-transformation",
@@ -153,72 +153,70 @@ const navItems = [
           {
             id: "extended-reality",
             title: "Extended Reality (XR)",
-            link: "next-gen-transformation/extended-reality"
+            link: "next-gen-transformation/extended-reality",
           },
           {
             id: "embedded-iot-connectivity",
             title: "Embedded IoT & Connectivity",
-            link: "next-gen-transformation/embedded-iot-connectivity"
+            link: "next-gen-transformation/embedded-iot-connectivity",
           },
           {
             id: "game-development",
             title: "Game Development",
-            link: "next-gen-transformation/game-development"
+            link: "next-gen-transformation/game-development",
           },
           {
             id: "media-content-creation",
             title: "Media & Content Creation",
-            link: "next-gen-transformation/media-content-creation"
-          }
-        ]
-      }
-    ]
+            link: "next-gen-transformation/media-content-creation",
+          },
+        ],
+      },
+    ],
   },
   {
     id: "industries",
     type: "text",
     title: "Industries",
-    link: "industries"
+    link: "industries",
   },
   {
     id: "portfolio",
     type: "text",
     title: "Portfolio",
-    link: "portfolio"
+    link: "portfolio",
   },
   {
     id: "innovation-labs",
     type: "text",
     title: "Innovation Labs",
-    link: "innovation-labs"
+    link: "innovation-labs",
   },
   {
     id: "t-insights",
     type: "text",
     title: "T-Insights",
-    link: "t-insights"
+    link: "t-insights",
   },
   {
     id: "about",
     type: "text",
     title: "About",
-    link: "about-us"
+    link: "about-us",
   },
   {
     id: "career",
     type: "text",
     title: "Career",
-    link: "career"
-  }
+    link: "career",
+  },
 ];
 
 function AccordionNavItem(item: any) {
   return (
     <Accordion type="single" collapsible className="w-full text=[#F5F5F5]">
       <AccordionItem value="item-1">
-        <AccordionTrigger>
-          {item.item.title}
-        </AccordionTrigger>
+        <AccordionTrigger>{item.item.title}</AccordionTrigger>
         <AccordionContent>
           {item.item.items?.map((item: any, idx: number) => (
             <div key={idx}>
@@ -230,11 +228,11 @@ function AccordionNavItem(item: any) {
         </AccordionContent>
       </AccordionItem>
     </Accordion>
-  )
+  );
 }
 
 function navItem(item: any) {
-  if(item.type === "dropdown") {
+  if (item.type === "dropdown") {
     return (
       <NavigationMenuItem className="">
         <NavigationMenuTrigger className="px-3 py-2 bg-transparent text-[16px] leading-[24px] font-medium text-[#ADA1BB] hover:bg-[#1a1a2a] hover:text-white">
@@ -245,7 +243,9 @@ function navItem(item: any) {
             {item.items.map((item: any, idx: number) => (
               <div key={idx}>
                 <h3 className="text-lg font-medium mb-3 text-white h-20 pr-2">
-                  {item.title}
+                  <Link href={`${item.link}`} className="hover:underline">
+                    {item.title}
+                  </Link>
                 </h3>
                 <ul className="space-y-2">
                   {item.links.map((link: any, index: number) => (
@@ -285,33 +285,33 @@ function navItem(item: any) {
 function MobileMenu() {
   return (
     <div className="xl:hidden fixed overflow-y-auto top-[90px] left-0 right-0 w-full h-full bg-[#070010] text-[#F5F5F5] pb-4">
-      {
-        navItems.map((item, index) => (
-          <div key={index} className="border-y-1 border-[#332C44]">
-            <div className="text-[15px] leading-[24px] py-5 global-padding">
-              {item.type === "text" ? <Link href={"/"+item.link}>
-                {item.title}
-              </Link> : <AccordionNavItem item={item} />}
-            </div>
+      {navItems.map((item, index) => (
+        <div key={index} className="border-y-1 border-[#332C44]">
+          <div className="text-[15px] leading-[24px] py-5 global-padding">
+            {item.type === "text" ? (
+              <Link href={"/" + item.link}>{item.title}</Link>
+            ) : (
+              <AccordionNavItem item={item} />
+            )}
           </div>
-        ))
-      }
-      
+        </div>
+      ))}
     </div>
   );
 }
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div className="fixed top-0 left-0 right-0 z-50 w-full bg-[#070010] ">
       <div className="main-container-width flex h-[90px] items-center justify-between py-y global-padding">
         {/* Logo */}
         <Link href="/" className=" ">
-          <Image className="md:w-[136px] md:h-[45px] w-[100px] h-[30px] "
+          <Image
+            className="md:w-[136px] md:h-[45px] w-[100px] h-[30px] "
             src={herettoLogo}
             alt="Logo"
-            
           ></Image>
         </Link>
 
@@ -320,29 +320,30 @@ export function Navbar() {
           <NavigationMenuList className="gap-2.5 px-5">
             {/* Direct Single Link */}
             {navItems.map((item, index) => (
-                <div key={index}>
-                  {navItem(item)}
-                </div>
+              <div key={index}>{navItem(item)}</div>
             ))}
           </NavigationMenuList>
         </NavigationMenu>
 
         {/* Contact Button */}
         <div className="hidden xl:flex">
-          <GradientButton
-            text="Contact Us"
-            link="/contact"
-          ></GradientButton>
+          <GradientButton text="Contact Us" link="/contact"></GradientButton>
         </div>
 
         <div className="xl:hidden px-1 py-2" onClick={() => setIsOpen(!isOpen)}>
-          {
-            isOpen ? <div className="flex items-center gap-5.5 text-[#F5F5F5] text-[15px] underline leading-[24px] underline-offset-2">
+          {isOpen ? (
+            <div className="flex items-center gap-5.5 text-[#F5F5F5] text-[15px] underline leading-[24px] underline-offset-2">
               <div className="text-white">Contact Us</div>
-              <X className="text-white" size={18}/>
-            </div> : <Image src={hamburgerMenu} alt="Hamburger Menu" width={23} height={15} />
-          }
-          
+              <X className="text-white" size={18} />
+            </div>
+          ) : (
+            <Image
+              src={hamburgerMenu}
+              alt="Hamburger Menu"
+              width={23}
+              height={15}
+            />
+          )}
         </div>
         {isOpen && <MobileMenu />}
       </div>

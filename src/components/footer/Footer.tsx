@@ -16,7 +16,7 @@ export const Footer: React.FC = () => {
   const coeLinks = [
     { text: "Next-Gen Engineering", href: "/next-gen-transformation" },
     { text: "Data-driven Transformation", href: "/data-driven-transformation" },
-    { text: "Artificial Intelligence & ML", href: "/artificial-intelligence" },
+    { text: "Artificial Intelligence & ML", href: "/ai-ml" },
     { text: "Full Stack Engineering", href: "/product-engineering" },
     { text: "Consulting & Advisory", href: "/consulting" },
   ];

@@ -9,6 +9,7 @@ import TestimonialsSection from "./section/TestimonialsSection";
 
 // Forms
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
+import ServiceSectionComponent from "@/components/pages/solutions/ServiceSectionComponent";
 
 // Utility wrapper to handle section spacing
 const SectionWrapper = ({
