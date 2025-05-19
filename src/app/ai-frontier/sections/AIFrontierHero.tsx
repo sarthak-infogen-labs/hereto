@@ -1,6 +1,7 @@
 import { CustomButton } from "@/components/shared/CustomButtons/Buttons";
 import React from "react";
 import Image from "next/image";
+import AnimatedSvg from "./AnimatedSvg";
 
 const AIFrontierHero = () => {
   return (
@@ -19,17 +20,15 @@ const AIFrontierHero = () => {
             background: `radial-gradient(50.98% 52.49% at 50.1% 34.98%, rgba(125, 42, 232, 0.9) 0%, rgba(90, 50, 250, 0.3) 50%, rgba(26, 29, 62, 0.4) 100%)`,
           }}
         />
-        <Image
-          src="/images/ai-frontier-hero-section/Group 244.svg"
-          alt="Borderlines"
-          width={201}
-          height={128}
+        <div
           className="absolute left-1/2 -translate-x-1/2 bottom-15
              max-md:w-[150px] max-md:h-[96px] 
              max:w-[105.31px] max:h-[67.07px] 
              max-sm:bottom-[40px]
              max-md:opacity-60"
-        />
+        >
+          <AnimatedSvg />
+        </div>
 
         <Image
           src="/images/ai-frontier-hero-section/Vector 245.svg"
