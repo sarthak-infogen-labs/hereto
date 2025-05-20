@@ -5,8 +5,8 @@ import Image from "next/image";
 
 const AboutUsHeroSection = () => {
   return (
-    <div className="min-h-[80vh] relative border-1 border-transparent 0 w-full">
-      <div className=" text-center w-full mt-[80px] lg:[160px] xl:mt-[223px]">
+    <div className="md:h-[80vh]  h-full relative border-1 border-transparent 0 w-full">
+      <div className=" text-center w-full max-md:mt-[80px] mt-[160px] xl:mt-[223px] mb-0 md:pb-[103px]">
         <h1 className="text-white text-display ">
           We are <span className="gradient-text">Herrito</span>
         </h1>
@@ -23,7 +23,7 @@ const AboutUsHeroSection = () => {
         />
 
         <div
-          className="absolute blur-[70px] top-[40%] w-full h-[259px] rounded-full left-1/2 -translate-x-1/2 z-[-1] "
+          className="absolute blur-[70px] top-[30%] w-full h-[259px] rounded-full left-1/2 -translate-x-1/2 z-[-1] "
           style={{
             background: `radial-gradient(50.98% 52.49% at 50.1% 34.98%, rgba(33, 18, 72, 0.9) 0%, rgba(90, 50, 250, 0.3) 50%, rgba(26, 29, 62, 0.4) 100%)`,
           }}

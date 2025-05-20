@@ -9,7 +9,7 @@ import TestimonialsSection from "./section/TestimonialsSection";
 
 // Forms
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
-import ServiceSectionComponent from "@/components/pages/solutions/ServiceSectionComponent";
+import OurStorySection from "./section/OurStorySection";
 
 // Utility wrapper to handle section spacing
 const SectionWrapper = ({
@@ -26,6 +26,10 @@ const Page = () => {
       <AboutUsHeroSection />
 
       <div className="main-container-width global-padding">
+        <SectionWrapper>
+          <OurStorySection />
+        </SectionWrapper>
+
         <SectionWrapper spacing="mt-[36px] lg:mt-[48px] xl:mt-[62px]">
           <CompanyInfoSection />
         </SectionWrapper>
