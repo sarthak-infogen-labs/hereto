@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={clsx(dmSans.className, "antialiased")}>
-        <div className=" min-h-[2100px] overflow-hidden">
+        <div className=" min-h-[2100px]">
           <nav className="main-container-width ">
             <Navbar />
           </nav>

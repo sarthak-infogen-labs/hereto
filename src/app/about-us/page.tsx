@@ -49,6 +49,9 @@ const Page = () => {
         <SectionWrapper spacing="mt-[92px] lg:mt-[110px] xl:mt-[135px]">
           <ContactSection />
         </SectionWrapper>
+        {/* <CompanyInfoSection /> */}
+        {/* <CompanyPartners/> */}
+        {/* <LeaderShipTeamSection/> */}
       </div>
     </div>
   );

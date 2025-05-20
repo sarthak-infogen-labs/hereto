@@ -1,4 +1,4 @@
-
+import clsx from "clsx";
 import Image from "next/image";
 import React from "react";
 
@@ -10,21 +10,30 @@ export interface BlogCardProps {
   title: string;
   tags: string[];
   excerpt: string;
+  className?: string;
 }
 
-const BlogCard= ({
+const BlogCard = ({
   image,
   author,
   readTime,
   title,
   tags,
   excerpt,
+  className = "",
 }: BlogCardProps) => {
   return (
-    <article className="bg-[#3D2D59]/12 backdrop-blur-sm w-[338px] max-[420px]:w-[310px] overflow-hidden h-auto pb-[30px] rounded-[20px] transition-all duration-300 hover:scale-[1.02] cursor-pointer border-[#C1C1C1]/33 border-[0.5px]">
+    <article
+      className={clsx(
+        "bg-[#3D2D59]/12 backdrop-blur-sm w-[338px] max-[420px]:w-[310px] overflow-hidden h-auto pb-[30px] rounded-[20px] transition-all duration-300 hover:scale-[1.02] cursor-pointer border-[#C1C1C1]/33 border-[0.5px]",
+        className
+      )}
+    >
       <div className="relative flex w-full flex-col overflow-hidden">
         <Image
           src={image}
+          width={390}
+          height={390}
           className="aspect-[1.85] object-cover w-full"
           alt="blog image"
         />
@@ -39,7 +48,9 @@ const BlogCard= ({
           <span>{readTime}</span>
         </div>
         <div className="mt-1">
-          <h3 className="text-[16px] text-[#F5F5F5] font-semibold leading-6">{title}</h3>
+          <h3 className="text-[16px] text-[#F5F5F5] font-semibold leading-6">
+            {title}
+          </h3>
           <div className="flex gap-1 mt-2">
             {tags.map((tag, index) => (
               <span
