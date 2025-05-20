@@ -1,13 +1,17 @@
 import ChatInput from "@/components/shared/CustomInputs/ChatInput";
 import TextDisplay from "@/components/shared/TextDisplay";
 import { Input } from "@/components/ui/input";
+import { landingPageData } from "@/constants/LandingPageData";
 
 export default function Hero() {
   return (
     <div className="mt-[60px] md:mt-[160px]">
       <div className="">
         <div className="">
-          <TextDisplay title="Innovation Beyond" gradientTitle="Imagination" />
+          <TextDisplay
+            title={landingPageData.header.title1}
+            gradientTitle={landingPageData.header.title2}
+          />
           <div className="mt-[42px] md:mt-[102px] ww-full max-w-[850px]">
             <ChatInput />
           </div>

@@ -2,8 +2,17 @@
 import React, { useRef, useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import TabButton from "./TabButton";
+import { IOptions } from "@/interface/Ioption.interface";
 
-const Tabs = ({ data }: { data: any[] }) => {
+const Tabs = ({
+  data,
+  value,
+  onChange,
+}: {
+  data: IOptions[];
+  value: string;
+  onChange: (id: string) => void;
+}) => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(false);
@@ -55,7 +64,7 @@ const Tabs = ({ data }: { data: any[] }) => {
   return (
     <div className="flex items-center space-x-2">
       {/* Left Arrow */}
-      {showLeftArrow && (
+      {/* {showLeftArrow && (
         <button
           onClick={() => scroll("left")}
           className="p-2 rounded-full hover:bg-gray-700 active:bg-gray-600 cursor-pointer"
@@ -63,12 +72,12 @@ const Tabs = ({ data }: { data: any[] }) => {
         >
           <ChevronLeft size={20} color="white" />
         </button>
-      )}
+      )} */}
       {/* Scrollable Tabs */}
 
       <div
         ref={scrollRef}
-        className="flex flex-row gap-5 overflow-x-auto scrollbar-hide no-scrollbar border border-[#322B43] rounded-full p-1.5 whitespace-nowrap"
+        className="flex flex-row gap-5 overflow-x-auto scrollbar-hide no-scrollbar  border border-[#322B43] rounded-full p-1.5 whitespace-nowrap"
         style={{ scrollBehavior: "smooth", maxWidth: "80vw" }}
       >
         {data.map((tab) => (
@@ -76,13 +85,13 @@ const Tabs = ({ data }: { data: any[] }) => {
             key={tab.id}
             id={tab.id}
             label={tab.label}
-            isActive={false}
-            onClick={() => {}}
+            isActive={tab.id == value}
+            onClick={() => onChange(tab.id)}
           />
         ))}
       </div>
       {/* Right Arrow */}
-      {showRightArrow && (
+      {/* {showRightArrow && (
         <button
           onClick={() => scroll("right")}
           className="p-2 rounded-full hover:bg-gray-700 active:bg-gray-600 cursor-pointer"
@@ -90,7 +99,7 @@ const Tabs = ({ data }: { data: any[] }) => {
         >
           <ChevronRight size={20} color="white" />
         </button>
-      )}
+      )} */}
     </div>
   );
 };

@@ -37,7 +37,7 @@
   }
 
   .text-h3-medium {
-    @apply md:text-[1.5rem] lg:text-[1.75rem];
+    @apply font-semibold text-[24px] md:text-[1.5rem] lg:text-[1.75rem];
   }
 
   .text-h5 {

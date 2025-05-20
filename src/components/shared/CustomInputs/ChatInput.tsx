@@ -1,6 +1,7 @@
 "use client";
 import { use, useState } from "react";
 import { ArrowUpIcon } from "lucide-react";
+import { landingPageData } from "@/constants/LandingPageData";
 export default function ChatInput() {
   const [msg, setMsg] = useState("How does Heretto enhance productivity?");
   const [isActive, setActive] = useState(false);
@@ -40,13 +41,13 @@ export default function ChatInput() {
       )}
       {!isActive && (
         <p className="mt-4.5 text-[#ADA1BB] text-[13px] font-extralight leading-[19px] tracking-wide">
-          This chatbot is powered by Heretto. AI-generated responses may be
-          inaccurate, please double-check information. This chat is not intended
-          to process Personal Data. Information regarding our processing of
-          Personal Data is available in our
-          <a href="#" className="text-[#F5F5F5]">
+          {landingPageData.disclaimer.text}
+          <a
+            href={landingPageData.disclaimer.linkHref}
+            className="text-[#F5F5F5]"
+          >
             {" "}
-            Privacy Policy.
+            {landingPageData.disclaimer.linkText}
           </a>
         </p>
       )}

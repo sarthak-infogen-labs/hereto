@@ -10,6 +10,7 @@ import WaveAnimation from "@/components/animatedAssets/WaveAnimation";
 const sectionSpacing = "mt-[92px] lg:mt-[130px] xl:mt-[190px]";
 import InnovationLabsSection from "@/components/pages/home/InnovationLabsSection";
 import AboutUsSection from "@/components/pages/home/AboutUsSection";
+import InnovateIndustries from "@/components/pages/home/InnovateIndustries";
 
 export default function Home() {
   return (
@@ -38,6 +39,9 @@ export default function Home() {
         <div className={sectionSpacing}>
           <ScalableSolutionsSection />
         </div>
+        <div className={sectionSpacing}>
+          <InnovateIndustries />
+        </div>
 
         <div className="mt-[92px] lg:mt-[130px] xl:mt-[190px]">
           <AboutUsSection />
@@ -53,10 +57,6 @@ export default function Home() {
         <div className={sectionSpacing}>
           <ContactSection />
         </div>
-
-        {/* <div className={sectionSpacing}>
-          <InnovateIndustries />
-        </div> */}
       </div>
     </div>
   );

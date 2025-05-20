@@ -1,7 +1,7 @@
 import { ArrowRightIcon } from "lucide-react";
 import { AIAccordion } from "@/components/shared/CustomAccordions/AIAccordion";
-import { aiFrontierSection } from "@/constants/AIFrontierSectionData";
 import { CustomButton } from "@/components/shared/CustomButtons/Buttons";
+import { landingPageData } from "@/constants/LandingPageData";
 
 export default function AIFrontierSection() {
   return (
@@ -10,11 +10,17 @@ export default function AIFrontierSection() {
         <div className="py-20 px-10  flex flex-row bg-blur-gradient-border">
           {/* Left Column */}
           <div className="flex flex-col justify-between p-5 h-100">
-            <h2 className="text-[#EEE6FC] text-h1  font-semibold max-w-[550px]" style={{lineHeight:'58px'}}>
-              {aiFrontierSection.title}
+            <h2
+              className="text-[#EEE6FC] text-h1  font-semibold max-w-[550px]"
+              style={{ lineHeight: "58px" }}
+            >
+              {landingPageData.aifrontierSection.title}
             </h2>
             <div>
-              <CustomButton> {aiFrontierSection.btnName}</CustomButton>
+              <CustomButton>
+                {" "}
+                {landingPageData.aifrontierSection.btnName}
+              </CustomButton>
             </div>
           </div>
           {/* Right Column */}

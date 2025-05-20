@@ -41,7 +41,7 @@ const CustomDropdown: React.FC<CustomDropdownProps> = ({
           px-[18px] py-[5px] rounded-[26px] flex items-center justify-center gap-2
           shadow-[1px_1px_8px_0px_rgba(137,133,168,0.4)_inset,2px_2px_4px_0px_rgba(22,19,38,0.18)]
           hover:bg-gray-800
-          focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-0
+          cursor-pointer
           `}
         >
           <span>{selectedOption ? selectedOption.label : placeholder}</span>

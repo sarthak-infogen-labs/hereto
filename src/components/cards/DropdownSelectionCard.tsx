@@ -1,27 +1,36 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Card, CardContent } from "../ui/card";
 import { CustomButton } from "../shared/CustomButtons/Buttons";
 import CustomDropdown from "../shared/CustomDropdown/CustomDropdown";
-
-const options = [
-  { id: "1", label: "React", value: "react" },
-  { id: "2", label: "Vue", value: "vue" },
-  { id: "3", label: "Next-Gen Transformation", value: "angular" },
-];
+import { aiFrontierOptions } from "@/constants/options";
+import {
+  aifrontierSectionData,
+  landingPageData,
+} from "@/constants/LandingPageData";
 
 const DropdownSelectionCard = () => {
-  const [selected, setSelected] = useState("vue");
+  const initialValue = aiFrontierOptions[0].value;
+  const [selected, setSelected] = useState(initialValue);
+  const [selectedData, setSelectedData] = useState(
+    aifrontierSectionData.find((item) => item.id == initialValue)
+  );
+
+
+  useEffect(() => {
+    setSelectedData(aifrontierSectionData.find((item) => item.id == selected));
+  }, [selected]);
+
   return (
     <Card className="min-h-[401px] bg-blur-gradient-border py-[24px] px-[16px] px flex flex-col justify-around items-center">
       <div>
         <h1 className=" text-white text-center text-title-mobile">
-          Advancing Towards Artificial General Intelligence
+          {landingPageData.aifrontierSection.title}
         </h1>
       </div>
       <div>
         <CustomDropdown
-          options={options}
+          options={aiFrontierOptions}
           value={selected}
           onChange={setSelected}
           label="Frontend Framework"
@@ -30,11 +39,7 @@ const DropdownSelectionCard = () => {
       </div>
       <div>
         <h5 className="text-subtitle text-white text-center leading-[24px]">
-          We design and develop intelligent agent systems that can autonomously
-          execute tasks based on predefined goals. These systems are built with
-          capabilities like memory, contextual awareness, and adaptive
-          reasoning, allowing them to make informed decisions and dynamically
-          adjust actions in real time.
+          {selectedData?.data?.description}
         </h5>
       </div>
       <div className="w-full flex justify-center items-center">

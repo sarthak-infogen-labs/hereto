@@ -11,6 +11,7 @@ import {
 } from "../../../../public/images";
 import LogosInfiniteScroll from "@/components/InfiniteScrollItems/LogosInfiniteScrol";
 import { logo } from "@/constants/AIFrontierSectionData";
+import { landingPageData } from "@/constants/LandingPageData";
 
 const industries = [
   { icon: healthIcon, label: "Healthcare" },
@@ -25,20 +26,18 @@ const industries = [
 const InnovateIndustries = () => {
   const firstRow = industries.slice(0, 4);
   const secondRow = industries.slice(4);
- 
 
   const boxClasses =
     "bg-[#332C44]/15 border border-[#332C44] flex gap-2.5 items-center justify-center px-[22px] py-[28px] rounded-xl xl:min-w-[257px]";
 
   return (
     <div className="relative py-10 w-full">
-      <h2 className="text-center text-[#EEE6FC] text-h4  leading-[52px]">
-        Helping Businesses Across Industries
+      <h2 className="text-center text-white text-h3-medium  leading-[52px]">
+        {landingPageData.industriesInnovateSection.header.title1}
       </h2>
 
-      <p className="text-center text-[#D6C8EE] text-subtitle leading-[24px] tracking-[0.36px] mt-6">
-        We work with a wide range of industries to deliver solutions that solve
-        real challenges.
+      <p className="text-center text-[#D6C8EE] text-body-sm leading-[24px] tracking-[0.36px] mt-6">
+        {landingPageData.industriesInnovateSection.summary}
       </p>
 
       {/* Background Blur */}

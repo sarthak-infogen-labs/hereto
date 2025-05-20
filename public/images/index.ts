@@ -4,11 +4,11 @@ import linkedinLogo from "./linkedinLogo.svg";
 import facebookLogo from "./facebookLogo.svg";
 import xLogo from "./xLogo.svg";
 import gmailLogo from "./gmailLogo.svg";
-import map from "./location_map.svg"
-import blogImage1 from "./blogImage1.png"
-import graceImg from "./Grace.jpg"
-import boForgeImg from "./BOForge.jpg"
-import thitoImg from "./Thito.jpg"
+import map from "./location_map.svg";
+import blogImage1 from "./blogImage1.png";
+import graceImg from "./Grace.jpg";
+import boForgeImg from "./BOForge.jpg";
+import thitoImg from "./Thito.jpg";
 
 import kickoff from "./about-us/kickoff.svg";
 import kickoffbase from "./about-us/kickoff_base.svg";
@@ -27,57 +27,66 @@ import healthIcon from "./about-us/health.svg";
 import highTech from "./about-us/high-tech.svg";
 import grid from "./grid.svg";
 
-import smeeple from "./testimonials/smeeple_test.svg"
-import thito from "./testimonials/thito.svg"
-import wagoneer from "./testimonials/wagoneer.svg"
-import shivajiUniversity from "./testimonials/shivaji-university.svg"
-import mitsubishi from "./testimonials/mitsubishi.svg"
-import medisimLab from "./testimonials/medisim-lab.svg"
+import smeeple from "./testimonials/smeeple_test.svg";
+import thito from "./testimonials/thito.svg";
+import wagoneer from "./testimonials/wagoneer.svg";
+import shivajiUniversity from "./testimonials/shivaji-university.svg";
+import mitsubishi from "./testimonials/mitsubishi.svg";
+import medisimLab from "./testimonials/medisim-lab.svg";
 
-import dataDrivenHeroSection from "./data-driven-hero.png"
+import dataDrivenHeroSection from "./data-driven-hero.png";
 
-import linkedIn from '../images/socials/linkedin.png'
-import twitter from '../images/socials/twitter.png'
-import mail from '../images/socials/mail.png'
-import facebook from '../images/socials/facebook.png'
+import linkedIn from "../images/socials/linkedin.png";
+import twitter from "../images/socials/twitter.png";
+import mail from "../images/socials/mail.png";
+import facebook from "../images/socials/facebook.png";
 
-export { 
-    linkedIn,
-    twitter,
-    mail,
-    facebook,
-    herettoLogo,
-    hamburgerMenu,
-    linkedinLogo,
-    facebookLogo,
-    xLogo,
-    gmailLogo,
-    map,
-    blogImage1,
-    kickoff,
-    kickoffbase,
-    create,
-    createbase,
-    build,
-    buildbase,
-    deliver,
-    deliverbase,
-    graceImg,
-    boForgeImg,
-    thitoImg,
-    grid,
-    learningIcon,
-    fintechIcon,
-    gamingIcon,
-    industryIcon,
-    logisticsIcon,
-    healthIcon,
-    highTech,
-    smeeple,
-    thito,
-    wagoneer,
-    shivajiUniversity,
-    mitsubishi,
-    medisimLab,
-    dataDrivenHeroSection
+import nextGenSolutionImage from "../images/solutions/next-gen-tranformation.svg";
+import aiMlSolutionImage from "../images/solutions/ai-ml.svg";
+import dataDrivenSolutionImage from "../images/solutions/data-driven.svg";
+import aproductEnginneringSolutionImage from "../images/solutions/product-engineering.svg";
+
+export {
+  nextGenSolutionImage,
+  aiMlSolutionImage,
+  dataDrivenSolutionImage,
+  aproductEnginneringSolutionImage,
+  linkedIn,
+  twitter,
+  mail,
+  facebook,
+  herettoLogo,
+  hamburgerMenu,
+  linkedinLogo,
+  facebookLogo,
+  xLogo,
+  gmailLogo,
+  map,
+  blogImage1,
+  kickoff,
+  kickoffbase,
+  create,
+  createbase,
+  build,
+  buildbase,
+  deliver,
+  deliverbase,
+  graceImg,
+  boForgeImg,
+  thitoImg,
+  grid,
+  learningIcon,
+  fintechIcon,
+  gamingIcon,
+  industryIcon,
+  logisticsIcon,
+  healthIcon,
+  highTech,
+  smeeple,
+  thito,
+  wagoneer,
+  shivajiUniversity,
+  mitsubishi,
+  medisimLab,
+  dataDrivenHeroSection,
 };
