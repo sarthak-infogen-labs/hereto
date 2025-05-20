@@ -2,7 +2,6 @@ import Hero from "@/components/pages/home/Hero";
 import AIFrontierSection from "@/components/pages/home/AIFrontierSection";
 import SolutionsSection from "@/components/pages/home/SolutionsSection";
 import ScalableSolutionsSection from "@/components/pages/home/ScalableSolutionsSection";
-import InnovateIndustries from "@/components/pages/home/InnovateIndustries";
 import DropdownSelectionCard from "@/components/cards/DropdownSelectionCard";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
@@ -55,9 +54,9 @@ export default function Home() {
           <ContactSection />
         </div>
 
-        <div className={sectionSpacing}>
+        {/* <div className={sectionSpacing}>
           <InnovateIndustries />
-        </div>
+        </div> */}
       </div>
     </div>
   );

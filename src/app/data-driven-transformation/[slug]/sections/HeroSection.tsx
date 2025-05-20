@@ -1,4 +1,4 @@
-import { DataEngineeringHeroSection } from "@/components/pages/data-driven-transformations/CustomDataHero";
+import { DataEngineeringHeroSection } from "@/components/pages/data-driven-transformations/DataHero";
 
 export function HeroSection() {
   return (
