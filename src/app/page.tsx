@@ -14,7 +14,7 @@ import AboutUsSection from "@/components/pages/home/AboutUsSection";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden">
       {/* Background decoration (optional) */}
       {/* <div className="hidden lg:block absolute top-[-100px] left-[-700px] overflow-hidden w-full">
         <WaveAnimation />

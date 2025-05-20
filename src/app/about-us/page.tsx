@@ -26,25 +26,9 @@ const Page = () => {
       <AboutUsHeroSection />
 
       <div className="main-container-width global-padding">
-        <SectionWrapper spacing="mt-[36px] lg:mt-[48px] xl:mt-[62px]">
-          <CompanyInfoSection />
-        </SectionWrapper>
-
-        <SectionWrapper spacing="mt-[92px] lg:mt-[140px] xl:mt-[195px]">
-          <CompanyPartners />
-        </SectionWrapper>
-
-        <SectionWrapper>
-          <LeaderShipTeamSection />
-        </SectionWrapper>
-
-        <SectionWrapper spacing="mt-[92px] lg:mt-[145px] xl:mt-[200px]">
-          <TestimonialsSection />
-        </SectionWrapper>
-
-        <SectionWrapper spacing="mt-[92px] lg:mt-[110px] xl:mt-[135px]">
-          <ContactSection />
-        </SectionWrapper>
+        {/* <CompanyInfoSection /> */}
+        {/* <CompanyPartners/> */}
+        <LeaderShipTeamSection/>
       </div>
     </div>
   );
