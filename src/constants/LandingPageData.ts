@@ -190,4 +190,37 @@ export const landingPageData = {
     summary:
       "Our engineers and experts have enabled businesses across sectors to meet critical goals. With deep technical experience and a tested methodology, we support your success at every stage. ",
   },
+  aboutUsSection: {
+    title: `We are a group of tech enthusiasts passionate about early adoption of 
+                next-generation technologies and engineering top-scale products to tackle the 
+                pressing problems within diverse industries.`,
+  },
+  innovationLabSection: {
+    header: {
+      title: "Innovating With Purpose and Precision",
+    },
+    summary:
+      "Innovation Lab is a dedicated space where we present our work on new technologies, product prototypes, and functional Proof of Concepts (POCs). It reflects our ongoing focus on solving real-world problems through practical engineering and modern tech adoption.",
+    btnTitle: "Innovation Labs",
+    data: [
+      {
+        innovationName: "Grace",
+        innovationDescription: "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
+        navLink: "#",
+        image: "",
+      },
+      {
+        innovationName: "Thito",
+        innovationDescription: "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
+        navLink: "#",
+        image: "",
+      },
+      {
+        innovationName: "BOForge",
+        innovationDescription: "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
+        navLink: "#",
+        image: "",
+      },
+    ],
+  },
 };
