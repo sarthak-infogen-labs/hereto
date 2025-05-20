@@ -1,44 +1,29 @@
 "use client";
 import Tabs from "@/components/tabs/Tabs";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import TechnologyCompTabContent from "./TechnologyCompTabContent";
 import CustomDropdown from "@/components/shared/CustomDropdown/CustomDropdown";
+import { aiOptions } from "@/constants/options";
+import { aiTechnologiesData } from "@/constants/AIFrontierPageData";
 
 export default function TechnologyComp() {
-  const [activeTab, setActiveTab] = useState("ai_agents");
-  const [selected, setSelected] = useState("vue");
+  const selectedTechId = aiOptions[0].id;
+  const [selected, setSelected] = useState(selectedTechId);
+  const [selectedTechnologyData, setTechnologyData] = useState(
+    aiTechnologiesData.find((item) => item.id == selectedTechId)
+  );
 
-  const options = [
-    { id: "1", label: "React", value: "react" },
-    { id: "2", label: "Vue", value: "vue" },
-    { id: "3", label: "Next-Gen Transformation", value: "angular" },
-  ];
+  useEffect(() => {
+    setTechnologyData(aiTechnologiesData.find((item) => item.id == selected));
+  }, [selected]);
 
-  const data = [
-    {
-      id: "ai-agents",
-      label: "AI Agents",
-    },
-    {
-      id: "mcp-a2a",
-      label: "MCP & A2A",
-    },
-    {
-      id: "rag",
-      label: "RAG",
-    },
-    {
-      id: "ipa",
-      label: "IPA",
-    },
-  ];
   return (
     <div className="flex justify-center items-center flex-col">
       {/* Tab buttons */}
 
       <div className="block lg:hidden">
         <CustomDropdown
-          options={options}
+          options={aiOptions}
           value={selected}
           onChange={setSelected}
           label="Frontend Framework"
@@ -46,7 +31,11 @@ export default function TechnologyComp() {
         />
       </div>
       <div className="hidden lg:block">
-        <Tabs data={data} />
+        <Tabs
+          data={aiOptions}
+          value={selected}
+          onChange={(id) => setSelected(id)}
+        />
       </div>
 
       {/* Tab content */}

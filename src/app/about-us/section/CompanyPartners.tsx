@@ -1,6 +1,6 @@
 import LogosInfiniteScroll from "@/components/InfiniteScrollItems/LogosInfiniteScrol";
 import TechnologyCompTabContent from "@/components/pages/ai-frontier/TechnologyCompTabContent";
-import { logo } from "@/constants/AIFrontierSectionData";
+import { logo } from "@/constants/AIFrontierPageData";
 import React from "react";
 
 const CompanyPartners = () => {

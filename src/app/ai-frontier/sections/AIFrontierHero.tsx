@@ -2,6 +2,7 @@ import { CustomButton } from "@/components/shared/CustomButtons/Buttons";
 import React from "react";
 import Image from "next/image";
 import AnimatedSvg from "../../../components/animatedAssets/AnimatedSvg";
+import { aiFrontierPageData } from "@/constants/AIFrontierPageData";
 
 const AIFrontierHero = () => {
   return (
@@ -53,14 +54,13 @@ const AIFrontierHero = () => {
 
           <div className="w-full flex justify-center mt-[36px]">
             <p className="text-[#D6C8EE]  text-body leading-6 tracking-[0.36px]  w-full">
-              We engineer solutions that integrate context-aware intelligence
-              into every layer of your operations
+              {aiFrontierPageData.heroSection.description}
             </p>
           </div>
 
           <div className="mt-[39px]">
             <CustomButton className="bg-transparent backdrop-blur-md">
-              {"Consult with Data Expert"}
+              {aiFrontierPageData.heroSection.btnName}
             </CustomButton>
           </div>
         </div>

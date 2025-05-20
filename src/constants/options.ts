@@ -35,3 +35,10 @@ export const solutionsOptions = [
     value: "next-gen-transformation",
   },
 ];
+
+export const aiOptions = [
+  { id: "ai-agents", label: "AI Agents", value: "ai-agents" },
+  { id: "mcp", label: "MCP & A2A", value: "mcp" },
+  { id: "rag", label: "RAG", value: "rag" },
+  { id: "ipa", label: "IPA", value: "ipa" },
+];

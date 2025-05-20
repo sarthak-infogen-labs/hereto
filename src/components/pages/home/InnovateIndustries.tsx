@@ -10,7 +10,7 @@ import {
   highTech,
 } from "../../../../public/images";
 import LogosInfiniteScroll from "@/components/InfiniteScrollItems/LogosInfiniteScrol";
-import { logo } from "@/constants/AIFrontierSectionData";
+import { logo } from "@/constants/AIFrontierPageData";
 import { landingPageData } from "@/constants/LandingPageData";
 
 const industries = [

@@ -4,7 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { aiFrontierSection } from "@/constants/AIFrontierSectionData";
+import { aiFrontierSection } from "@/constants/AIFrontierPageData";
 import { aifrontierSectionData } from "@/constants/LandingPageData";
 
 export function AIAccordion() {
