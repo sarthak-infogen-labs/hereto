@@ -142,7 +142,7 @@ const EngineeringServicesSection = () => {
       <div className="max-md:mt-[24px] mt-[42px] lg:mt-[82px] w-full flex  ">
         <div className="w-1/2 flex flex-col space-y-[54px] max-md:hidden ">
           {dataEngineeringOfferings.map((item, index) => (
-            <div key={index} onMouseEnter={() => setHoveredcontentIndex(index)}>
+            <div key={index} onMouseEnter={() => setHoveredcontentIndex(index)} className="cursor-pointer">
               <li
                 className={`list-none text-h5 font-semibold ${
                   hoveredContentIndex === index
