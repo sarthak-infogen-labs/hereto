@@ -15,15 +15,17 @@ const page = () => {
           activeIndex={0}
         />
       </div>
-      <div className="mt-[32px] flex gap-[40px] max-md:flex-col lg:flex-row py-3 ">
+      <div className="mt-[32px] flex gap-[40px] max-md:flex-col lg:flex-row py-3 min-h-[584px]  ">
         {/* Main Content Section */}
-        <div className=" xs:w-full lg:w-7/12  flex flex-wrap text-white   min-h-screen">
+        <div className=" xs:w-full lg:w-7/12  flex flex-wrap text-white  h-full">
           <div className="mb-[20px]">
             <div className="flex justify-between w-full mb-[10px]">
               <div className="text-caption !text-[#F5F5F5]">
                 Written By Damon Salvatore{" "}
               </div>
-              <div className="text-caption !text-[#B2A8BE]">September, 2024 | 9 min read</div>
+              <div className="text-caption !text-[#B2A8BE]">
+                September, 2024 | 9 min read
+              </div>
             </div>
             <div className="text-h3-medium text-[#F5F5F5]">
               Mastering Telecom Infrastructure: Cloud vs. Off-Cloud Strategies.
@@ -165,8 +167,8 @@ const page = () => {
         </div>
 
         {/* Content Section with Sticky Behavior - FIXED */}
-        <div className=" max-md:w-full lg:w-5/12 self-start sticky top-24 ">
-          <div className="flex flex-col min-h-[400px]  p-[30px] rounded-xl border border-solid border-neutral-800 text-white box-border ">
+        <div className=" max-md:w-full lg:w-5/12 self-start sticky top-24 h-full  ">
+          <div className="flex flex-col min-h-[400px]  p-[30px] rounded-xl border border-solid border-neutral-800 text-white box-border  ">
             <form>
               <div className="flex flex-col  gap-[30px]">
                 <div className=" flex justify-center w-full text-[14px] text-h6 text-[#F5F5F5]    whitespace-nowrap">
@@ -182,7 +184,7 @@ const page = () => {
                 <div className="flex flex-row  gap-[12px] max-md:items-start items-center  ">
                   <input
                     type="checkbox"
-                    className="border  w-[20px] h-[20px] appearance-none bg-transparent px-2 "
+                    className="border w-[20px] h-[20px] appearance-none bg-transparent px-2   checked:after:content-['✔'] checked:after:text-white checked:after:flex checked:after:items-center checked:after:justify-center checked:after:h-full checked:after:w-full"
                   />
                   <div className=" text-label !text-[#B2A8BE]">
                     I consent to processing of my personal data entered above.
