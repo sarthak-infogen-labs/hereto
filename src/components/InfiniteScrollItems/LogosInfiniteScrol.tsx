@@ -3,27 +3,36 @@
 import Image from "next/image";
 import React from "react";
 
-type Props = {
-  images: string[];
+type Logo = {
+  icon: string; // URL or imported asset
+  label: string;
 };
 
-const LogosInfiniteScroll = ({ images }: Props) => {
-  const repeatedImages = [...images, ...images,...images,...images]; // Duplicate for seamless scroll
+type Props = {
+  logos: Logo[];
+  page:string;
+};
+
+const LogosInfiniteScroll = ({ logos , page}: Props) => {
+  const repeatedLogos = [...logos, ...logos, ...logos, ...logos]; // Repeat for scroll effect
 
   return (
     <div className="overflow-hidden w-full py-6">
-      <div className="flex animate-scroll gap-8">
-        {repeatedImages.map((src, index) => (
-          <Image
+      <div className="flex w-full space-x-2 animate-scroll">
+        {repeatedLogos.map((logo, index) => (
+          <div
             key={index}
-            src={src}
-            alt={`Logo ${index}`}
-            width={100}
-            height={100}
-            loading={index < 4 ? "eager" : "lazy"}
-            priority={index < 4}
-            className="object-contain inline-block w-[46px] h-[41px]"
-          />
+            className={`flex w-auto gap-2 px-6 py-4 flex-row items-center justify-center ${page==='home'? " bg-[#332C44]/15 border border-[#332C44]":''} rounded-xl `}
+          >
+            <Image
+              src={logo.icon}
+              alt={logo.label}
+              width={28}
+              height={24}
+              className="object-contain inline-block "
+            />
+            <div className=" text-[#EEE6FC] text-nowrap  ">{logo.label}</div>
+          </div>
         ))}
       </div>
     </div>

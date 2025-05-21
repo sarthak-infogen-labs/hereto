@@ -13,6 +13,7 @@ import LogosInfiniteScroll from "@/components/InfiniteScrollItems/LogosInfiniteS
 import { logo } from "@/constants/AIFrontierPageData";
 import { landingPageData } from "@/constants/LandingPageData";
 
+
 const industries = [
   { icon: healthIcon, label: "Healthcare" },
   { icon: fintechIcon, label: "BFSI" },
@@ -22,6 +23,8 @@ const industries = [
   { icon: gamingIcon, label: "Media & Entertainment" },
   { icon: highTech, label: "Hi-Tech" },
 ];
+
+
 
 const InnovateIndustries = () => {
   const firstRow = industries.slice(0, 4);
@@ -85,9 +88,10 @@ const InnovateIndustries = () => {
         </div>
       </div>
 
-      <div className="flex w-full flex-col mt-18">
+      <div className="flex w-full  flex-col mt-18">
         <LogosInfiniteScroll
-          images={[logo, logo, logo, logo, logo, logo, logo, logo]}
+          logos={landingPageData.industriesInnovateSection.logoLabel}
+          page='home'
         />
         {/* <PartnersSection /> */}
       </div>

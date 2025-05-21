@@ -13,12 +13,14 @@ export default function TechnologyComp() {
     aiTechnologiesData.find((item) => item.id == selectedTechId)
   );
 
+  console.log(selectedTechnologyData)
+
   useEffect(() => {
     setTechnologyData(aiTechnologiesData.find((item) => item.id == selected));
   }, [selected]);
 
   return (
-    <div className="flex justify-center items-center flex-col">
+    <div className=" flex justify-center items-center flex-col ">
       {/* Tab buttons */}
 
       <div className="block lg:hidden">
@@ -39,8 +41,8 @@ export default function TechnologyComp() {
       </div>
 
       {/* Tab content */}
-      <div className="container mx-auto mt-[36px]">
-        <TechnologyCompTabContent />
+      <div className="container mx-auto mt-[36px] bg-[#332C44]/14  ">
+        <TechnologyCompTabContent technology={selectedTechnologyData?.technology ?? []}/>
       </div>
     </div>
   );

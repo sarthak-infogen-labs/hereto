@@ -46,6 +46,14 @@ import aiMlSolutionImage from "../images/solutions/ai-ml.svg";
 import dataDrivenSolutionImage from "../images/solutions/data-driven.svg";
 import aproductEnginneringSolutionImage from "../images/solutions/product-engineering.svg";
 
+
+import microsoft from "./about-us/IndustryPartners/microsoft.svg"
+import aws from "./about-us/IndustryPartners/aws.svg"
+import databricks from "./about-us/IndustryPartners/databricks.svg"
+import gcp from "./about-us/IndustryPartners/gcp.svg"
+import salesforce from "./about-us/IndustryPartners/salesforce.svg"
+import snowflake from "./about-us/IndustryPartners/snowflake.svg"
+
 import enterpriseAgenticAi from '../images/enterpriseAutomation/enterprise_agentic_ai.svg'
 import enterpriseAgent2AgentProtocol from '../images/enterpriseAutomation/enterprise_agent2agentprotocol.svg'
 import enterpriseMcp from '../images/enterpriseAutomation/enterprise_mcp.svg'
@@ -160,4 +168,10 @@ export {
   mitsubishi,
   medisimLab,
   dataDrivenHeroSection,
+  microsoft,
+  aws,
+  gcp,
+  salesforce,
+  databricks,
+  snowflake
 };

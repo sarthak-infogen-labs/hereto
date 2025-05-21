@@ -11,6 +11,12 @@ import {
   buildbase,
   deliver,
   deliverbase,
+  smeeple,
+  mitsubishi,
+  thito,
+  wagoneer,
+  medisimLab,
+  shivajiUniversity,
 } from "../../public/images";
 
 export const aifrontierSectionData = [
@@ -189,6 +195,32 @@ export const landingPageData = {
     },
     summary:
       "Our engineers and experts have enabled businesses across sectors to meet critical goals. With deep technical experience and a tested methodology, we support your success at every stage. ",
+    logoLabel: [
+      {
+        icon: smeeple,
+        label: "Smeeple",
+      },
+      {
+        icon: mitsubishi,
+        label: "Mitsubishi",
+      },
+      {
+        icon: thito,
+        label: "THITO",
+      },
+      {
+        icon: shivajiUniversity,
+        label: "Shivaji University",
+      },
+      {
+        icon:wagoneer,
+        label:'Wagoneer'
+      },
+      {
+        icon:medisimLab,
+        label:'MedisimLAB'
+      }
+    ],
   },
   aboutUsSection: {
     title: `We are a group of tech enthusiasts passionate about early adoption of 

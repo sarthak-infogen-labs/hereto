@@ -5,6 +5,7 @@ import { HeroSection } from "./sections/HeroSection";
 import ServiceInfoSection from "./sections/ServiceInfoSection";
 import OperationsChallengesSection from "./sections/OperationChallengesSection";
 import TechnologiesSection from "./sections/TechnologiesSection";
+import EngineeringServicesSection from "./sections/EngineeringServicesSection";
 export default function Page() {
   const params = useParams();
   return (
@@ -14,6 +15,10 @@ export default function Page() {
       </div>
       <div className="md:mt-[200px] sm:mt-[140px] mt-[92px]">
         <ServiceInfoSection />
+      </div>
+
+      <div className="mt-[92px] lg:mt-[170px] md:mt-[120px]">
+        <EngineeringServicesSection/>
       </div>
 
       <div className="md:mt-[170px] sm:mt-[130px] mt-[92px]">

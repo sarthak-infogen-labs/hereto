@@ -5,7 +5,6 @@ import ScalableSolutionsSection from "@/components/pages/home/ScalableSolutionsS
 import DropdownSelectionCard from "@/components/cards/DropdownSelectionCard";
 import TInsights from "@/components/customCarousels/t-insights/TInsights";
 import { ContactSection } from "@/components/forms/contact-form/ContactSection";
-import WaveAnimation from "@/components/animatedAssets/WaveAnimation";
 
 const sectionSpacing = "mt-[92px] lg:mt-[130px] xl:mt-[190px]";
 import InnovationLabsSection from "@/components/pages/home/InnovationLabsSection";

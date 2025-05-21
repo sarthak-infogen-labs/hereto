@@ -2,6 +2,8 @@ import LogosInfiniteScroll from "@/components/InfiniteScrollItems/LogosInfiniteS
 import TechnologyCompTabContent from "@/components/pages/ai-frontier/TechnologyCompTabContent";
 import { logo } from "@/constants/AIFrontierPageData";
 import React from "react";
+import { IndustryPartners } from "@/constants/AboutUsPageData";
+
 
 const CompanyPartners = () => {
   return (
@@ -11,7 +13,8 @@ const CompanyPartners = () => {
       </h5>
       <div className="mt-[24px]">
         <LogosInfiniteScroll
-          images={[logo, logo, logo, logo, logo, logo, logo, logo]}
+          logos={IndustryPartners.industryPartnersLogos}
+          page='about-us'
         />
       </div>
     </div>
