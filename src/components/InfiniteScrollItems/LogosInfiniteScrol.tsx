@@ -10,10 +10,10 @@ type Logo = {
 
 type Props = {
   logos: Logo[];
-  page:string;
+  variant?:string;
 };
 
-const LogosInfiniteScroll = ({ logos , page}: Props) => {
+const LogosInfiniteScroll = ({ logos , variant}: Props) => {
   const repeatedLogos = [...logos, ...logos, ...logos, ...logos]; // Repeat for scroll effect
 
   return (
@@ -22,7 +22,7 @@ const LogosInfiniteScroll = ({ logos , page}: Props) => {
         {repeatedLogos.map((logo, index) => (
           <div
             key={index}
-            className={`flex w-auto gap-2 px-6 py-4 flex-row items-center justify-center ${page==='home'? " bg-[#332C44]/15 border border-[#332C44]":''} rounded-xl `}
+            className={`flex w-auto gap-2 px-6 py-4 flex-row items-center justify-center ${variant==='card'? " bg-[#332C44]/15 border border-[#332C44]":''} rounded-xl `}
           >
             <Image
               src={logo.icon}

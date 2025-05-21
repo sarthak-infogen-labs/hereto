@@ -34,7 +34,7 @@ const Page = () => {
           <CompanyInfoSection />
         </SectionWrapper>
 
-        <SectionWrapper spacing="mt-[92px] lg:mt-[140px] xl:mt-[195px]">
+        <SectionWrapper spacing="mt-[92px] lg:mt-[140px] xl:mt-[195px] ">
           <CompanyPartners />
         </SectionWrapper>
 

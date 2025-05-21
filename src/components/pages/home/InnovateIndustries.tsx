@@ -91,7 +91,7 @@ const InnovateIndustries = () => {
       <div className="flex w-full  flex-col mt-18">
         <LogosInfiniteScroll
           logos={landingPageData.industriesInnovateSection.logoLabel}
-          page='home'
+          variant='card'
         />
         {/* <PartnersSection /> */}
       </div>
