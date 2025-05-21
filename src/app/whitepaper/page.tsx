@@ -23,7 +23,7 @@ const page = () => {
               <div className="text-caption !text-[#F5F5F5]">
                 Written By Damon Salvatore{" "}
               </div>
-              <div className="text-caption">September, 2024 | 9 min read</div>
+              <div className="text-caption !text-[#B2A8BE]">September, 2024 | 9 min read</div>
             </div>
             <div className="text-h3-medium text-[#F5F5F5]">
               Mastering Telecom Infrastructure: Cloud vs. Off-Cloud Strategies.
