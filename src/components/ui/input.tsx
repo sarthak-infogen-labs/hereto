@@ -4,12 +4,17 @@ import { cn } from "@/lib/utils";
 function Input({
   className,
   type = "text",
+  required = false,
+  placeholder,
   ...props
 }: React.ComponentProps<"input">) {
+  const modifiedplaceholder =
+    required && placeholder ? `${placeholder} *` : placeholder;
   return (
     <input
       type={type}
       data-slot="input"
+      placeholder={modifiedplaceholder}
       className={cn(
         "flex w-full h-12 rounded-lg border px-4 py-2 text-base outline-none ",
 
