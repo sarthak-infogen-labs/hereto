@@ -15,7 +15,7 @@ const MainHeader = ({
   return (
     <div className="flex flex-col items-center mx-auto">
       <div className="">
-        <p className="text-[#EEE6FC] text-h1 font-semibold max-w-[930px] text-center">
+        <p className="text-[#EEE6FC] text-h1 font-semibold max-w-[1030px] text-center">
           {title1}
           {title2 && (
             <>

@@ -35,7 +35,7 @@ const InnovateIndustries = () => {
 
   return (
     <div className="relative py-10 w-full">
-      <h2 className="text-center text-white text-h3-medium  leading-[52px]">
+      <h2 className="text-center text-white text-h3-medium   leading-[52px]">
         {landingPageData.industriesInnovateSection.header.title1}
       </h2>
 

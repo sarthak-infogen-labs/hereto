@@ -1,54 +1,65 @@
 "use client";
+
+import React, { useEffect, useState } from "react";
 import ServiceCard from "@/components/cards/ServiceCard";
 import MainHeader from "@/components/headers/MainHeader";
 import CustomDropdown from "@/components/shared/CustomDropdown/CustomDropdown";
 import Tabs from "@/components/tabs/Tabs";
-import React, { useState } from "react";
+import { aiMlCoeTabsData, aiMlPageData } from "@/constants/AiMlPageData";
+import {
+  dataDrivenCoeTabsData,
+  dataDrivenPageData,
+} from "@/constants/DataDrivenPageData";
+import { aiCoeOptions, dataDrivenCoeOptions } from "@/constants/options";
 
-const ServiceSectionComponent = () => {
-  const [activeTab, setActiveTab] = useState("ai_agents");
-  const [selected, setSelected] = useState("vue");
-
-  const options = [
-    { id: "1", label: "React", value: "react" },
-    { id: "2", label: "Vue", value: "vue" },
-    { id: "3", label: "Next-Gen Transformation", value: "angular" },
-  ];
-  const tabData = [
+const ServiceSectionComponent = ({ id }: { id: string }) => {
+  const serverSectionData = [
     {
-      id: "sas",
-      label: "Application Developement",
+      id: "ai-ml",
+      options: aiCoeOptions,
+      title1: aiMlPageData.pageData.coeServiceSection.title1,
+      title2: aiMlPageData.pageData.coeServiceSection.title2,
+      summary: aiMlPageData.pageData.coeServiceSection.summary,
+      tabsData: aiMlCoeTabsData,
     },
     {
-      id: "sssas",
-      label: "Web Developement",
-    },
-    {
-      id: "saaas",
-      label: "Application Modernization",
-    },
-    {
-      id: "saffs",
-      label: "Quality Assurance",
-    },
-    {
-      id: "safdddfs",
-      label: "UI/UX Product Designing",
-    },
-    {
-      id: "safqqqfs",
-      label: "DevOps",
+      id: "data-driven-transformation",
+      options: dataDrivenCoeOptions,
+      title1: dataDrivenPageData.pageData.coeServiceSection.title1,
+      title2: "",
+      summary: dataDrivenPageData.pageData.coeServiceSection.summary,
+      tabsData: dataDrivenCoeTabsData,
     },
   ];
+
+  const sectionData = serverSectionData.find((item) => item.id === id);
+
+  const tabsData = sectionData?.tabsData || [];
+  const options = sectionData?.options || [];
+
+  // ✅ Fix: initialize selected with the first tab ID
+  const [selected, setSelected] = useState(() => tabsData[0]?.id || "");
+  const [selectedData, setSelectedData] = useState(() =>
+    tabsData.find((item) => item.id === selected)
+  );
+
+  useEffect(() => {
+    const updatedData = tabsData.find((item) => item.id === selected);
+    setSelectedData(updatedData);
+  }, [selected, tabsData]);
+
+  if (!sectionData) return null; // Or render fallback/error UI
+
   return (
     <div>
       <div className="flex justify-center items-center flex-col">
         <MainHeader
-          title1="Building an Intelligent Product for"
-          title2="Business Success."
-          summary="Bringing your vision into reality through engineering of scalable, intelligent products designed & engineered to address core business challenges."
+          title1={sectionData.title1}
+          title2={sectionData.title2}
+          summary={sectionData.summary}
           hideSmallerDeviceSummary={true}
         />
+
         <div className="mt-[41px] lg:mt-[58px] xl:mt-[78px]">
           <div className="block lg:hidden">
             <CustomDropdown
@@ -60,12 +71,20 @@ const ServiceSectionComponent = () => {
             />
           </div>
           <div className="hidden lg:block">
-            <Tabs data={tabData} />
+            <Tabs
+              data={options}
+              value={selected}
+              onChange={(id) => setSelected(id)}
+            />
           </div>
         </div>
 
         <div className="max-w-[1180px] mx-auto">
-          <ServiceCard />
+          <ServiceCard
+            title={selectedData?.title || ""}
+            summary={selectedData?.summary || ""}
+            technologies={selectedData?.technologies || []}
+          />
         </div>
       </div>
     </div>

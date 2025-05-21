@@ -2,6 +2,7 @@ import SubTextDisplay from "@/components/shared/SubTextDisplay";
 import React from "react";
 import ShowProfiles from "./ShowProfiles";
 import Image from "next/image";
+import { aboutUsPageData } from "@/constants/AboutUsPageData";
 
 const AboutUsHeroSection = () => {
   return (
@@ -11,10 +12,10 @@ const AboutUsHeroSection = () => {
           We are <span className="gradient-text">Herrito</span>
         </h1>
         <div className="max-w-[663px] mx-auto">
-          <SubTextDisplay text="Enabling enterprise access to top-tier AI expertise, infrastructure, and deployment capabilities." />
+          <SubTextDisplay text={aboutUsPageData.heroSection.description} />
         </div>
       </div>
-       <div className="absolute w-full h-full top-0">
+      <div className="absolute w-full h-full top-0">
         <Image
           src="/images/ai-frontier-hero-section/grid-png.png"
           alt="Borderlines"
@@ -28,9 +29,8 @@ const AboutUsHeroSection = () => {
             background: `radial-gradient(50.98% 52.49% at 50.1% 34.98%, rgba(33, 18, 72, 0.9) 0%, rgba(90, 50, 250, 0.3) 50%, rgba(26, 29, 62, 0.4) 100%)`,
           }}
         />
-        
       </div>
-      <ShowProfiles/>
+      <ShowProfiles />
     </div>
   );
 };

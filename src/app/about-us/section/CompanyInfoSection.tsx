@@ -1,23 +1,6 @@
+import { aboutUsPageData } from "@/constants/AboutUsPageData";
 import React from "react";
 
-const companyData = [
-  {
-    count: 90,
-    title: "Projects Successfully Delivered",
-  },
-  {
-    count: 15,
-    title: "Industries Served Globally",
-  },
-  {
-    count: 50,
-    title: "Technologies Mastered",
-  },
-  {
-    count: 95,
-    title: "Client Satisfaction Achieved",
-  },
-];
 
 const CompanyInfoCard = ({
   count,
@@ -72,7 +55,7 @@ const CompanyInfoSection = () => {
             text-center md:text-left
           "
       >
-        {companyData.map((item, index) => {
+        {aboutUsPageData.companyData.map((item, index) => {
           return (
             <CompanyInfoCard
               count={item.count}
