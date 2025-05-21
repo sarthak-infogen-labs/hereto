@@ -52,6 +52,14 @@ export const aifrontierSectionData = [
         "Combine the power of LLM with real-time data retrieval to generate accurate, context-rich responses. RAG reduces hallucinations and improves factual consistency. It's ideal for dynamic applications like question answering, chatbots, and document summarization.",
     },
   },
+  {
+    id: "intelligent-process-automation",
+    data: {
+      title: "Intelligent Process Automation (IPA)",
+      description:
+        "Intelligent Process Automation (IPA) integrates robotic process automation (RPA) with AI technologies to enables the automation of complex, decision-based tasks that traditionally required human judgment. IPA improves operational efficiency, reduces errors, and allows businesses to scale processes intelligently.",
+    },
+  },
 ];
 
 export const solutionsSectionData = [
@@ -213,13 +221,13 @@ export const landingPageData = {
         label: "Shivaji University",
       },
       {
-        icon:wagoneer,
-        label:'Wagoneer'
+        icon: wagoneer,
+        label: "Wagoneer",
       },
       {
-        icon:medisimLab,
-        label:'MedisimLAB'
-      }
+        icon: medisimLab,
+        label: "MedisimLAB",
+      },
     ],
   },
   aboutUsSection: {
@@ -237,19 +245,22 @@ export const landingPageData = {
     data: [
       {
         innovationName: "Grace",
-        innovationDescription: "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
+        innovationDescription:
+          "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
         navLink: "#",
         image: "",
       },
       {
         innovationName: "Thito",
-        innovationDescription: "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
+        innovationDescription:
+          "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
         navLink: "#",
         image: "",
       },
       {
         innovationName: "BOForge",
-        innovationDescription: "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
+        innovationDescription:
+          "Our innovative e-learning platform is designed for children aged 4 to 5. It offers an engaging, interactive experience",
         navLink: "#",
         image: "",
       },

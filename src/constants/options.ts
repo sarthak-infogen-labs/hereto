@@ -15,6 +15,11 @@ export const aiFrontierOptions = [
     label: "Retrieval-Augmented Generation (RAG)",
     value: "retrieval-augmented-generation-rag",
   },
+  {
+    id: "intelligent-process-automation",
+    label: "Intelligent Process Automation (IPA)",
+    value: "intelligent-process-automation",
+  },
 ];
 
 export const solutionsOptions = [

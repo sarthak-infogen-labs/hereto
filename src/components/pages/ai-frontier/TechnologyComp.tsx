@@ -20,8 +20,7 @@ export default function TechnologyComp() {
   }, [selected]);
 
   return (
-    <div className=" flex justify-center items-center flex-col ">
-      {/* Tab buttons */}
+    <div className="flex justify-center items-center flex-col">
 
       <div className="block lg:hidden">
         <CustomDropdown
