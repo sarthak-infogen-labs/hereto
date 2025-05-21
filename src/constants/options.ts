@@ -47,3 +47,20 @@ export const aiOptions = [
   { id: "rag", label: "RAG", value: "rag" },
   { id: "ipa", label: "IPA", value: "ipa" },
 ];
+
+
+// IMPORTANT
+export const aiCoeOptions = [
+  { id: "gen-ai", label: "Generative AI", value: "gen-ai" },
+  { id: "nlp", label: "Natural Language Processing", value: "nlp" },
+  { id: "computer-vision", label: "Computer Vision", value: "computer-vision" },
+  { id: "responsible-ai", label: "Responsible AI", value: "responsible-ai" },
+  { id: "deep-learning", label: "Deep Learning", value: "deep-learning" },
+  { id: "digit-twin", label: "Digital Twin", value: "digit-twin" },
+];
+
+export const dataDrivenCoeOptions = [
+  { id: "data-engineering", label: "Data Engineering", value: "data-engineering" },
+  { id: "data-analytics-bi", label: "Data Analytics & BI", value: "data-analytics-bi" },
+  { id: "data-science", label: " Data Science", value: "data-science" },
+];

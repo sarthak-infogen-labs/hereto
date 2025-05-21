@@ -1,5 +1,6 @@
 import LeadershipTeamCard from "@/components/cards/LeadershipTeamCard";
 import MainHeader from "@/components/headers/MainHeader";
+import { aboutUsPageData } from "@/constants/AboutUsPageData";
 import React from "react";
 
 const mockTeam = [
@@ -14,8 +15,8 @@ const LeaderShipTeamSection = () => {
   return (
     <div>
       <MainHeader
-        title1="Meet Our Leadership Team"
-        summary="Our team combines deep expertise, extensive experience, and genuine passion to make your digital journey seamless and successful."
+        title1={aboutUsPageData.leaderShipTeamSection.header.title1}
+        summary={aboutUsPageData.leaderShipTeamSection.header.description}
       />
       <div className="flex justify-center mt-[32px] md:mt-[50px]  lg:mt-[72px]">
         <div className="flex gap-4 overflow-x-auto scroll-hidden py-4 px-2">

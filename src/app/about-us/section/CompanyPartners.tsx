@@ -1,6 +1,6 @@
 import LogosInfiniteScroll from "@/components/InfiniteScrollItems/LogosInfiniteScrol";
 import React from "react";
-import { IndustryPartners } from "@/constants/AboutUsPageData";
+import { aboutUsPageData, IndustryPartners } from "@/constants/AboutUsPageData";
 
 
 const CompanyPartners = () => {
@@ -13,7 +13,7 @@ const CompanyPartners = () => {
         }}
       />
       <h5 className="text-h3-medium text-white text-center">
-        Partnering with the best technology partners in the industry.
+        {aboutUsPageData.technologyPartnerSection.header.title}
       </h5>
       <div className="mt-[24px] main-container-width">
         <LogosInfiniteScroll

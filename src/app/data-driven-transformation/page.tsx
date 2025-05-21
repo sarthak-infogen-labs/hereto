@@ -6,9 +6,8 @@ export default function Page() {
     return (
         <div className="main-container-width global-padding">
             <DataDrivenHeroSection />
-            
             <div className="mt-[92px] lg:mt-[135px] xl:mt-[250px]">
-                <ServiceSectionComponent />
+                <ServiceSectionComponent id="data-driven-transformation"/>
             </div>
             <div className="mt-[92px] lg:mt-[140px] xl:mt-[264px]">
                 <TInsights />
