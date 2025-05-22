@@ -31,7 +31,7 @@ const DataInsightsCard: React.FC<DataInsightsCardProps> = ({
   return (
     <div className="relative w-[100%] h-[540px] max-md:h-[558px] flex items-end justify-center mx-auto">
       <div className="absolute inset-0 -z-10 ">
-        <Image
+        <Image  
           src={backgroundImage}
           alt="Case Study Background"
           fill
@@ -54,7 +54,7 @@ const DataInsightsCard: React.FC<DataInsightsCardProps> = ({
               <span>{percentageHighlight}</span>
               <span>{subHighlight}</span>
             </div>
-            <div className="flex justify-between text-body-sm mb-4 text-gray-300">
+            <div className="flex max-lg:flex-col max-lg:gap-4 justify-between text-body-sm mb-4 text-gray-300">
               <span>{platform}</span>
               <span>{industry}</span>
             </div>

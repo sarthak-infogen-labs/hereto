@@ -29,7 +29,7 @@ const DataInsightsSection = () => {
       ctaText: "Read Case Study",
       ctaLink: "#",
       backgroundImage:
-        "/images/data-driven-transformation/carousel/carousel1.jpg", // Replace with your actual path
+        "/images/data-driven-transformation/carousel/carousel2.jpg", // Replace with your actual path
     },
     {
       percentageHighlight: "42%",
@@ -42,7 +42,7 @@ const DataInsightsSection = () => {
       ctaText: "Read Case Study",
       ctaLink: "#",
       backgroundImage:
-        "/images/data-driven-transformation/carousel/carousel1.jpg", // Replace with your actual path
+        "/images/data-driven-transformation/carousel/carousel3.jpg", // Replace with your actual path
     },
   ];
   return (

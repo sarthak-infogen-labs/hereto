@@ -52,7 +52,7 @@ const DataInsightsComponent: React.FC<DataInsightsComponentProps> = ({
   }, [api, onSelect]);
 
   return (<div className="w-full flex flex-col items-center">
-      <div className="text-h1-semibold !font-semibold max-w-[722px] text-center text-[#EEE6FC">
+      <div className="text-h1-semibold !font-semibold max-w-[722px] text-center text-[#EEE6FC]">
        {sectionTitle}
       </div>
       <Carousel className="w-full  md:p-12 max-md:pt-8 flex flex-row justify-between items-center " setApi={setApi}>

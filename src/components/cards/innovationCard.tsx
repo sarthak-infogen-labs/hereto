@@ -16,7 +16,7 @@ export default function Card({
   backgroundImage,
 }: CardProps) {
   return (
-    <div className="relative min-[1350px]:w-[334px] min-[1350px]:h-[334px] lg:w-[290px] lg:h-[290px] rounded-xl overflow-hidden bg-[#3D2D59]/15 group/card w-[334px] h-[334px]">
+    <div className="relative min-[1350px]:w-[334px] min-[1350px]:h-[334px] lg:w-[290px] lg:h-[290px] rounded-xl overflow-hidden bg-[#3D2D59]/15 group/card w-[334px] h-[334px] cursor-pointer">
       {/* Background Image */}
       <Image
         src={backgroundImage}
