@@ -47,20 +47,20 @@ const DataInsightsCard: React.FC<DataInsightsCardProps> = ({
             <div className="text-display font-bold mb-2 flex items-center justify-center h-4/5 ">
               {percentageHighlight}
             </div>
-            <div className="text-base text-centerm">{subHighlight}</div>
+            <div className="text-base text-center">{subHighlight}</div>
           </div>
           <div className=" w-3/4 max-lg:w-full">
-            <div className="flex gap-2 lg:hidden text-body-sm mb-4 text-gray-300">
+            <div className="flex gap-2 lg:hidden !font-medium text-body-sm mb-4 ">
               <span>{percentageHighlight}</span>
               <span>{subHighlight}</span>
             </div>
-            <div className="flex max-lg:flex-col max-lg:gap-4 justify-between text-body-sm mb-4 text-gray-300">
+            <div className="flex max-lg:flex-col max-lg:gap-3 justify-between text-body-sm mb-4 ">
               <span>{platform}</span>
               <span>{industry}</span>
             </div>
             <div className=" my-6 text-h5 gap-2 flex flex-col">
               <h2 className=" font-semibold">{title}</h2>
-              <p className="text-body-sm  mb-4">{description}</p>
+              <p className="text-body-sm !font-normal  leading-[26px] ">{description}</p>
             </div>
             <Link
               href={ctaLink}
