@@ -187,8 +187,8 @@ function TInsights() {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="bg-[#F5F5F5]" />
-          <CarouselNext className="bg-[#F5F5F5]" />
+          <CarouselPrevious className="bg-[#F5F5F5] !text-[#5B54E0]" />
+          <CarouselNext className="bg-[#F5F5F5] !text-[#5B54E0] " />
         </Carousel>
         {/* <InsightsCarousel /> */}
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">

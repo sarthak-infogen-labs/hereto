@@ -31,8 +31,8 @@ const page = () => {
               Mastering Telecom Infrastructure: Cloud vs. Off-Cloud Strategies.
             </div>
             <div className="flex gap-[10px] mt-[13px] ">
-              <Chip content="AI and Machine Learning" />
-              <Chip content="AR SDKs" />
+              <Chip content="AI and Machine Learning" bgColor="rgba(51, 44, 68, 1)" />
+              <Chip content="AR SDKs"  bgColor="rgba(51, 44, 68, 1)"/>
             </div>
           </div>
           <p className="mb-4">

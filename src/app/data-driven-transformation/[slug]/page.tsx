@@ -6,6 +6,7 @@ import ServiceInfoSection from "./sections/ServiceInfoSection";
 import OperationsChallengesSection from "./sections/OperationChallengesSection";
 import TechnologiesSection from "./sections/TechnologiesSection";
 import EngineeringServicesSection from "./sections/EngineeringServicesSection";
+import DataInsightsSection from "./sections/DataInsightsSection";
 export default function Page() {
   const params = useParams();
   return (
@@ -26,6 +27,10 @@ export default function Page() {
       </div>
       <div className="md:mt-[170px] sm:mt-[130px] mt-[92px]">
         <TechnologiesSection />
+      </div>
+
+      <div className="mt-[92px] md:mt-[170px] sm:mt-[130px]">
+        <DataInsightsSection/>
       </div>
     </div>
   );

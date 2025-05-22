@@ -3,7 +3,7 @@
 import EngineeringSevicesComponent from "@/components/pages/data-driven-transformations/EngineeringSevicesComponent";
 
 const EngineeringServicesSection = () => {
-
+  const sectionTitle='We Provide End-to-End Data Engineering Offerings'
   const dataEngineeringOfferings = [
     {
       key: "ETL / ELT / Integration",
@@ -103,7 +103,7 @@ const EngineeringServicesSection = () => {
 
   return (
     <section>
-      <EngineeringSevicesComponent dataEngineeringOfferings={dataEngineeringOfferings}/> 
+      <EngineeringSevicesComponent sectionTitle={sectionTitle} dataEngineeringOfferings={dataEngineeringOfferings}/> 
     </section>
   );
 };
