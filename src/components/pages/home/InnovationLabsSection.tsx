@@ -106,8 +106,8 @@ const InnovationLabs = () => {
                   />
                 </CarouselItem>
               </CarouselContent>
-              <CarouselPrevious className="bg-[#F5F5F5]" />
-              <CarouselNext className="bg-[#F5F5F5]" />
+              <CarouselPrevious className="bg-[#F5F5F5] !text-[#5B54E0] " />
+              <CarouselNext className="bg-[#F5F5F5] !text-[#5B54E0]" />
             </Carousel>
           </div>
         </div>

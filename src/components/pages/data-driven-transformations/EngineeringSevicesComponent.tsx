@@ -1,6 +1,6 @@
 import EngineeringCard from "@/components/cards/EngineeringCard";
 import CustomDropdown from "@/components/shared/CustomDropdown/CustomDropdown";
-import React , {useState} from "react";
+import React, { useState } from "react";
 
 interface DataEngineeringOffering {
   key: string;
@@ -12,10 +12,12 @@ interface DataEngineeringOffering {
 }
 
 interface EngineeringServicesProps {
+  sectionTitle:string,
   dataEngineeringOfferings: DataEngineeringOffering[];
 }
 
 const EngineeringSevicesComponent: React.FC<EngineeringServicesProps> = ({
+  sectionTitle,
   dataEngineeringOfferings,
 }) => {
   const [hoveredContentIndex, setHoveredcontentIndex] = useState(0);
@@ -28,10 +30,10 @@ const EngineeringSevicesComponent: React.FC<EngineeringServicesProps> = ({
 
   const selectedOption = options[hoveredContentIndex];
 
-
-  return <div className="relative  w-full  flex flex-col items-center">
+  return (
+    <div className="relative  w-full  flex flex-col items-center">
       <div className="text-h1-semibold !font-semibold max-w-[666px] text-center text-[#EEE6FC">
-        We Provide End-to-End Data Engineering Offerings
+        {sectionTitle}
       </div>
 
       <div
@@ -59,7 +61,11 @@ const EngineeringSevicesComponent: React.FC<EngineeringServicesProps> = ({
       <div className="max-md:mt-[24px] mt-[42px] lg:mt-[82px] w-full flex  ">
         <div className="w-1/2 flex flex-col space-y-[54px] max-md:hidden ">
           {dataEngineeringOfferings.map((item, index) => (
-            <div key={index} onMouseEnter={() => setHoveredcontentIndex(index)} className="cursor-pointer">
+            <div
+              key={index}
+              onMouseEnter={() => setHoveredcontentIndex(index)}
+              className="cursor-pointer"
+            >
               <li
                 className={`list-none text-h5 font-semibold ${
                   hoveredContentIndex === index
@@ -79,7 +85,8 @@ const EngineeringSevicesComponent: React.FC<EngineeringServicesProps> = ({
           />
         </div>
       </div>
-    </div>;
+    </div>
+  );
 };
 
 export default EngineeringSevicesComponent;
