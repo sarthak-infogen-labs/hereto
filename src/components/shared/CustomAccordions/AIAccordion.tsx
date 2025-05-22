@@ -4,7 +4,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { aiFrontierSection } from "@/constants/AIFrontierPageData";
 import { aifrontierSectionData } from "@/constants/LandingPageData";
 
 export function AIAccordion() {
@@ -19,20 +18,25 @@ export function AIAccordion() {
         <AccordionItem
           key={item.id}
           value={item.id}
-          className={`my-2 border-b ${
-            index === aifrontierSectionData.length - 1
-              ? "border-b-0"
-              : "border-[#1a1a2e]"
-          }`}
+          // className={`my-2 border-b ${
+          //   index === aifrontierSectionData.length - 1
+          //     ? "border-b-0"
+          //     : "border-[#1a1a2e]"
+          // }`}
+
+          className="my-[12px]"
         >
-          <AccordionTrigger className="text-[#00C4CC] hover:text-[#0CD3C9] hover:no-underline cursor-pointer">
-            <h6 className="text-h6  leading-[28px]"> {item.data.title}</h6>
+          <AccordionTrigger className="text-[#00C4CC] hover:text-[#0CD3C9] hover:no-underline cursor-pointer mb-[10px]">
+            <div className="text-[16px] font-[600]  leading-[28px]">
+              {" "}
+              {item.data.title}
+            </div>
           </AccordionTrigger>
-          <AccordionContent className=" text-[#F5F5F5] mt-2">
-            <h6 className="text-h6  leading-[26px]">
+          <AccordionContent className=" text-[#F5F5F5] mt-2 ">
+            <div className="text-body-sm  leading-[26px] text-[#D6C8EE]">
               {" "}
               {item.data.description}
-            </h6>
+            </div>
           </AccordionContent>
         </AccordionItem>
       ))}

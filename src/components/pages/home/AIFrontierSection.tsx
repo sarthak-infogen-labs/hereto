@@ -1,6 +1,11 @@
 import { ArrowRightIcon } from "lucide-react";
 import { AIAccordion } from "@/components/shared/CustomAccordions/AIAccordion";
-import { CustomButton } from "@/components/shared/CustomButtons/Buttons";
+import {
+  CustomButton,
+  GradientBGButton,
+  GradientButton,
+  GradientButtonWithAnimation,
+} from "@/components/shared/CustomButtons/Buttons";
 import { landingPageData } from "@/constants/LandingPageData";
 
 export default function AIFrontierSection() {
@@ -16,9 +21,8 @@ export default function AIFrontierSection() {
             >
               {landingPageData.aifrontierSection.title}
             </h2>
-            <div>
-              <CustomButton>
-                {" "}
+            <div className="inline-block p-[1px] rounded-md bg-[#F5F5F5] hover:bg-gradient-to-r hover:from-[#00C4CC] hover:to-[#7D2AE8]  max-w-max transition-all duration-1000 ease-in-out shrink-0">
+              <CustomButton className=" border border-transparent hover:border-transparent whitespace-nowrap hover:bg-gradient-to-r hover:from-[#00C4CC17] hover:to-[#0E007666] transition-all duration-1000 ease-in-out">
                 {landingPageData.aifrontierSection.btnName}
               </CustomButton>
             </div>
