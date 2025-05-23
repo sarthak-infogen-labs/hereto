@@ -3,8 +3,17 @@
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "../ui/avatar";
+import { StaticImageData } from "next/image";
 
-const LeadershipTeamCard = () => {
+const LeadershipTeamCard = ({
+  member,
+}: {
+  member: {
+    name: string;
+    image: StaticImageData;
+    designation: string;
+  };
+}) => {
   return (
     <Card
       className="min-w-[237px] min-h-[168px] p-[24px] flex justify-between rounded-[8px] border-[1.2px] bg-[#332C4424] backdrop-blur-[100px]"
@@ -31,17 +40,17 @@ const LeadershipTeamCard = () => {
       <CardContent className="p-0 w-full h-full flex justify-between flex-col items-start">
         <div className="">
           <Avatar className="h-[64px] w-[64px]">
-            <AvatarImage src="https://github.com/shadcn.png" />
+            <AvatarImage src={member.image.src} />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
         </div>
         <div className="mt-[35px]">
           <div>
-            <h6 className="text-h6 text-white !font-semibold">Sarah Jonson</h6>
+            <h6 className="text-h6 text-white !font-semibold">{member.name}</h6>
           </div>
           <div>
             <p className="text-[14px] md:text-[16px] text-[#D6C8EE99]">
-              Product Manager
+              {member.designation}
             </p>
           </div>
         </div>

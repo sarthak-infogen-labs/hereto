@@ -62,5 +62,21 @@ export const aiCoeOptions = [
 export const dataDrivenCoeOptions = [
   { id: "data-engineering", label: "Data Engineering", value: "data-engineering" },
   { id: "data-analytics-bi", label: "Data Analytics & BI", value: "data-analytics-bi" },
-  { id: "data-science", label: " Data Science", value: "data-science" },
+  { id: "data-science", label: "Data Science", value: "data-science" },
+];
+
+export const productEngineeringCoeOptions = [
+  { id: "app-development", label: "Application Development", value: "app-development" },
+  { id: "web-development", label: "Web Development", value: "web-development" },
+  { id: "app-modernization", label: "Application Modernization", value: "app-modernization" },
+  { id: "quality-assurance", label: "Quality Assurance (QA)", value: "quality-assurance" },
+  { id: "ui-ux-design", label: "UI/UX Product Design", value: "ui-ux-design" },
+  { id: "devops", label: "DevOps", value: "devops" },
+];
+
+export const nextGenTechnologyCoeOptions = [
+  { id: "extended-reality", label: "Extended Reality (XR)", value: "extended-reality" },
+  { id: "embedded-iot", label: "Embedded IoT & Connectivity", value: "embedded-iot" }, 
+  { id: "game-development", label: "Game Development", value: "game-development" },
+  { id: "media-content", label: "Media & Content Creation", value: "media-content" },
 ];

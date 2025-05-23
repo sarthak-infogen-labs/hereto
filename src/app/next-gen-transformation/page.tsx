@@ -8,7 +8,7 @@ export default function Page() {
       <DataDrivenHeroSection />
 
       <div className="mt-[92px] lg:mt-[135px] xl:mt-[250px]">
-        <ServiceSectionComponent />
+        <ServiceSectionComponent id="next-gen-transformation"/>
       </div>
       <div className="mt-[92px] lg:mt-[140px] xl:mt-[264px]">
         <TInsights />

@@ -10,7 +10,14 @@ import {
   dataDrivenCoeTabsData,
   dataDrivenPageData,
 } from "@/constants/DataDrivenPageData";
-import { aiCoeOptions, dataDrivenCoeOptions } from "@/constants/options";
+import {
+  aiCoeOptions,
+  dataDrivenCoeOptions,
+  nextGenTechnologyCoeOptions,
+  productEngineeringCoeOptions,
+} from "@/constants/options";
+import { productEngineeringCoeTabsData, productEngineeringPageData } from "@/constants/ProductEnginneringPageData";
+import { nextEngineeringPageData, nextGenTecnologyCoeTabsData } from "@/constants/NextEngineeringService";
 
 const ServiceSectionComponent = ({ id }: { id: string }) => {
   const serverSectionData = [
@@ -29,6 +36,22 @@ const ServiceSectionComponent = ({ id }: { id: string }) => {
       title2: "",
       summary: dataDrivenPageData.pageData.coeServiceSection.summary,
       tabsData: dataDrivenCoeTabsData,
+    },
+    {
+      id: "product-engineering",
+      options: productEngineeringCoeOptions,
+      title1: productEngineeringPageData.pageData.coeServiceSection.title1,
+      title2: productEngineeringPageData.pageData.coeServiceSection.title2,
+      summary: productEngineeringPageData.pageData.coeServiceSection.summary,
+      tabsData: productEngineeringCoeTabsData,
+    },
+    {
+      id: "next-gen-transformation",
+      options: nextGenTechnologyCoeOptions,
+      title1: nextEngineeringPageData.pageData.coeServiceSection.title1,
+      title2: nextEngineeringPageData.pageData.coeServiceSection.title2,
+      summary: nextEngineeringPageData.pageData.coeServiceSection.summary,
+      tabsData: nextGenTecnologyCoeTabsData,
     },
   ];
 

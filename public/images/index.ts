@@ -101,8 +101,71 @@ import tableau from "../images/technologyLogos/tableau.svg";
 import powerbi from "../images/technologyLogos/powerbi.svg";
 import looker from "../images/technologyLogos/looker.svg";
 import python from "../images/technologyLogos/python.svg";
+import reactjs from "../images/technologyLogos/reactjs.svg";
+import nodejs from "../images/technologyLogos/nodejs.svg";
+import javascript from "../images/technologyLogos/javascript.svg";
+import docker from "../images/technologyLogos/docker.svg";
+import kubernetes from "../images/technologyLogos/kubernetes.svg";
+import jenkins from "../images/technologyLogos/jenkins.svg";
+import selenium from "../images/technologyLogos/selenium.svg";
+import cypress from "../images/technologyLogos/cypress.svg";
+import playwrite from "../images/technologyLogos/playwrite.svg";
+import figma from "../images/technologyLogos/figma.svg";
+import adobeXD from "../images/technologyLogos/vector.svg";
+import sketch from "../images/technologyLogos/sketch.svg";
+import terraform from "../images/technologyLogos/terraform.svg";
+import ansible from "../images/technologyLogos/ansible.svg";
+import awsCloudformation from "../images/technologyLogos/aws-cloudformation.svg";
+import webXR from "../images/technologyLogos/webXR.svg";
+import arKit from "../images/technologyLogos/ARKit.svg";
+import arCore from "../images/technologyLogos/ARCore.svg";
+import rots from "../images/technologyLogos/rots.svg";
+import mqtt from "../images/technologyLogos/mqtt.svg";
+import ble from "../images/technologyLogos/ble.svg";
+import zigbee from "../images/technologyLogos/zigbee.svg";
+import unity3D from "../images/technologyLogos/unity3D.svg";
+import unrealEngine from "../images/technologyLogos/unrealengine.svg";
+import photonEngine from "../images/technologyLogos/photonEngine.svg";
+import adobeAfterEffects from "../images/technologyLogos/adobeaftereffect.svg";
+import adobePremierepro from "../images/technologyLogos/adobePremierePro.svg";
+import adobePhotoshopCinema4D from "../images/technologyLogos/adobePhotoshopCinema.svg";
+
+import steveJohnsom from '../images/leadership-team/keerti-jonson.png'
+import emilyCarter from '../images/leadership-team/emily-carter.png'
+import davilPatel from '../images/leadership-team/davil-patel.png'
 
 export {
+  adobeAfterEffects,
+  adobePremierepro,
+  adobePhotoshopCinema4D,
+  unity3D,
+  unrealEngine,
+  photonEngine,
+  rots,
+  mqtt,
+  ble,
+  zigbee,
+  webXR,
+  arKit,
+  arCore,
+  terraform,
+  ansible,
+  awsCloudformation,
+  figma,
+  adobeXD,
+  sketch,
+  selenium,
+  cypress,
+  playwrite,
+  docker,
+  kubernetes,
+  jenkins,
+  reactjs,
+  nodejs,
+  javascript,
+  steveJohnsom,
+  emilyCarter,
+  davilPatel,
   python,
   tableau,
   powerbi,

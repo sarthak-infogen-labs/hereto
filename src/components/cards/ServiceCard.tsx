@@ -49,11 +49,11 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
           <div className="flex justify-between lg:justify-start items-center gap-4 mt-[16px] flex-wrap">
             {technologies.map((tech, index) => (
               <div
-                className="flex items-center gap-1 text-white text-sm"
+                className="flex items-center gap-2 text-white text-sm "
                 key={index}
               >
                 <Image height={24} width={24} src={tech.icon} alt={tech.label} />
-                <p>{tech.label}</p>
+                <p className="text-body-sm text-white !font-semibold">{tech.label}</p>
               </div>
             ))}
           </div>
